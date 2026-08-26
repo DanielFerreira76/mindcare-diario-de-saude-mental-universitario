@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+:root {
+    --roxoesc: #542344;
+    --roxocla: #C69FD5;
+    --amaresc: #FF9000;
+    --amarelo: #F7F052;
+    --amarcla: #EDF67D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 25px 100px;
+    border-bottom: solid black 1px;
+    gap: 10px;
+}
+#logo {
+    font-weight: 700;
+    font-size: 30px;
+    padding-right: 25px;
+}
+#titulomenu {
+    font-size: 20px;
+    font-weight: 100;
+}
+#nav {
+    position: absolute;
+    left: 50%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.menu {
+    width: 175px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+.seletores {
+    display: flex;
+}
+.seletorsent {
+    border: solid black 1px;
+    width: 200px;
+    height: auto;
+    
+}
+.seletorsent > h1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+.seletorsent > p {
+    font-size: 15px;
+}
