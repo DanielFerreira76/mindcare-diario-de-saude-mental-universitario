@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-
 :root {
     --roxoesc: #542344;
     --roxocla: #C69FD5;
+    --laranja: #3B1900;
     --amaresc: #FF9000;
     --amarelo: #F7F052;
     --amarcla: #EDF67D;
@@ -19,53 +19,87 @@ header {
     display: flex;
     align-items: center;
     padding: 25px 100px;
-    border-bottom: solid black 1px;
+    border-bottom: solid #542344 5px;
     gap: 10px;
-}
-#logo {
-    font-weight: 700;
-    font-size: 30px;
-    padding-right: 25px;
+    background-color: #C69FD5;
 }
 #titulomenu {
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
 }
 #nav {
-    position: absolute;
-    left: 50%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 a {
     text-decoration: none;
-    color: black;
-}
-.menu {
-    width: 175px;
-    height: 50px;
+    color:  white;
+    background-color: #542344;
     padding: 10px;
     border-radius: 10px;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+a:hover {
+    scale: 1.05;
+    text-decoration: underline;
 }
 
 main {
     text-align: center;
     padding: 20px;
+    background-image: linear-gradient(to bottom, #EDF67D, #FF9000);
 }
-h1 {
+main h1 {
     font-size: 50px;
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: 0px 0px 20px #FF9000;
 }
 .seletores {
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .seletorsent {
-    border: solid black 1px;
-    width: 200px;
-    height: auto;
-    
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F7F052;
+    transition: 0.2s;
+    border: solid #3B1900 3px;
+    box-sizing: border-box;
 }
-.seletorsent > h1 {
+.seletorsent:hover {
+    scale: 1.05;
+    cursor: pointer;
+    background-color: #EDF67D;
+    border: solid #FF9000 3px;
+}
+.seletorsent h2 {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 23px;
+    color: #3B1900;
 }
 .seletorsent > p {
+    font-weight: 600;
     font-size: 15px;
+    color: #FF9000;
+}
+img {
+    height: 120px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 30px;
+    color: white;
+    text-shadow: 0px 0px 20px #FF9000;
 }
