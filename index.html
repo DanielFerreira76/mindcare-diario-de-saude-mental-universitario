@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check-in</title>
+    <title>MindCare | Check-in diário</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,46 +18,97 @@
         </section>
     </header>
     <main>
+        <form id="checkin-form">
         <h1>Olá {user}!<br>Como você está se sentindo hoje?</h1>
         <section class="seletores">
-            <div class="seletorsent" id="energizado" onclick="selecionar()">
+            <button type="button" class="seletorsent" data-group="humor" data-value="Energizado" aria-pressed="false">
                 <img src="img/energizado.png" alt="Energizado">
                 <h2 class="sentimento">Energizado</h2>
                 <p>Disposto e Motivado</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Calmo" aria-pressed="false">
                 <img src="img/calmo.png" alt="Calmo">
                 <h2 class="sentimento">Calmo</h2>
                 <p>Tranquilo e Equilibrado</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Bem" aria-pressed="false">
                 <img src="img/bem.png" alt="Bem">
                 <h2 class="sentimento">Bem</h2>
                 <p>Me sinto bem</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Cansado" aria-pressed="false">
                 <img src="img/cansado.png" alt="Cansado">
                 <h2 class="sentimento">Cansado</h2>
                 <p>Pouca energia</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Ansioso" aria-pressed="false">
                 <img src="img/ansioso.png" alt="Ansioso">
                 <h2 class="sentimento">Ansioso</h2>
                 <p>Preocupado ou Inquieto</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Pressionado" aria-pressed="false">
                 <img src="img/sobrecarregado.png" alt="Sobrecarregado">
-                <h2 class="sentimento">Sobrecarregado</h2>
+                <h2 class="sentimento">Pressionado</h2>
                 <p>Muitas coisas para lidar</p>
-            </div>
-            <div class="seletorsent" id="" onclick="selecionar()">
+            </button>
+            <button type="button" class="seletorsent" data-group="humor" data-value="Triste" aria-pressed="false">
                 <img src="img/triste.png" alt="Triste">
                 <h2 class="sentimento">Triste</h2>
                 <p>Demasiado ou Abatido</p>
-            </div>
+            </button>
         </section>
         <h2 class="titulos">O que influenciou seu humor hoje?</h2>
+        <section class="seletores">
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Estudos" aria-pressed="false">
+                <img src="img/estudos.png" alt="Caderno">
+                <h3>Estudos</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Projetos" aria-pressed="false">
+                <img src="img/projetos.png" alt="Computador">
+                <h3>Projetos</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Família" aria-pressed="false">
+                <img src="img/familia.png" alt="Pessoas">
+                <h3>Família</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Relações" aria-pressed="false">
+                <img src="img/relacoes.png" alt="Coração">
+                <h3>Relações</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Finanças" aria-pressed="false">
+                <img src="img/financas.png" alt="Cifrão">
+                <h3>Finanças</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Provas" aria-pressed="false">
+                <img src="img/provas.png" alt="Lápis">
+                <h3>Provas</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Alimentação" aria-pressed="false">
+                <img src="img/alimentacao.png" alt="Maçã">
+                <h3>Alimentação</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Trabalho" aria-pressed="false">
+                <img src="img/trabalho.png" alt="Maleta">
+                <h3>Trabalho</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Lazer" aria-pressed="false">
+                <img src="img/lazer.png" alt="Controle">
+                <h3>Lazer</h3>
+            </button>
+            <button type="button" class="seletorinf" data-group="influencia" data-value="Outro" aria-pressed="false">
+                <img src="img/outro.png" alt="Mais">
+                <h3>Outro</h3>
+            </button>
+        </section>
+        <h2 class="titulos">Quer contar um pouco mais sobre o seu dia?(opcional)</h2>
+        <textarea name="detalhes" id="detalhes" placeholder="Escreva livremente, se quiser..."></textarea>
+        <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+        <button type="submit" id="envio">Registrar check-in</button>
+        </form>
     </main>
-    <footer></footer>
+    <footer>
+        Projeto criado por <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a> e  <a href="#" class="github">link</a> sob orientação de  <a href="#" class="github">Hudson Neves</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
