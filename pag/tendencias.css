@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+:root {
+    --esc: #180e15;
+    --apagado: #76666e;
+    --papel: #f5eff7;
+    --roxo: #C69FD5;
+    --roxoescuro: #542344;
+    --amarelo: #FF9000;
+    --claro: #d6e0da;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--papel);
+    color: var(--esc);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid var(--claro);
+    display: flex;
+    gap: 16px;
+    padding: 18px clamp(20px, 6vw, 90px);
+}
+
+header > img {
+    height: 54px;
+    width: 54px;
+}
+
+#titulomenu {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 2.2vw, 29px);
+    font-weight: 600;
+    line-height: 1.1;
+    max-width: 700px;
+}
+
+#nav {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+#nav a {
+    background: transparent;
+    border-radius: 8px;
+    color: var(--apagado);
+    font-size: 14px;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+#nav a:hover {
+    background: var(--roxo);
+    color: var(--roxoescuro);
+}
+
+main {
+    background: linear-gradient(135deg, var(--papel) 42%, #f2e5df 100%);
+    min-height: calc(100vh - 150px);
+    padding: clamp(42px, 7vw, 88px) 20px 80px;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.08;
+    margin: auto;
+    max-width: 1200px;
+    padding-bottom: 42px;
+}
+
+.painel-superior {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(230px, 300px) 1fr;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.analise-mensal {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.analise-mensal h2, .historico-semanal > h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.descricao {
+    color: var(--apagado);
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.humor-mensal {
+    align-items: center;
+    border-bottom: 1px solid var(--claro);
+    display: flex;
+    gap: 12px;
+    padding: 18px 0;
+}
+
+.humor-mensal:last-child {
+    border-bottom: 0;
+}
+
+.icone-humor {
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    overflow: hidden;
+    width: 45px;
+}
+
+.icone-humor img {
+    height: 38px;
+    width: 38px;
+}
+
+.informacao-humor {
+    flex: 1;
+}
+
+.informacao-humor strong {
+    display: block;
+    font-size: 15px;
+}
+
+.informacao-humor span {
+    color: var(--apagado);
+    font-size: 13px;
+}
+
+.calendario-area {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.cabecalho-calendario {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.cabecalho-calendario h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.cabecalho-calendario button {
+    background: transparent;
+    border: 1px solid var(--claro);
+    border-radius: 8px;
+    color: var(--roxoescuro);
+    cursor: pointer;
+    font-size: 20px;
+    height: 38px;
+    transition: background .2s ease, transform .2s ease;
+    width: 38px;
+}
+
+.cabecalho-calendario button:hover {
+    background: var(--roxo);
+    transform: translateY(-2px);
+}
+
+.dias-semana {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 6px;
+}
+
+.dias-semana span {
+    color: var(--apagado);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px;
+    text-align: center;
+}
+
+.dias-calendario {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dia {
+    align-items: center;
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid var(--claro);
+    border-radius: 9px;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    position: relative;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.dia.vazio {
+    background: transparent;
+    border-color: transparent;
+}
+
+.dia.com-humor:hover {
+    box-shadow: 0 3px 10px rgba(24, 14, 21, .1);
+    transform: translateY(-2px);
+}
+
+.numero-dia {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bolinha-dia {
+    border-radius: 50%;
+    height: 18px;
+    margin-top: 5px;
+    width: 18px;
+}
+
+.dia.hoje {
+    border: 2px solid var(--amarelo);
+}
+
+.energizado {
+    background: #F4C95D;
+}
+
+.calmo {
+    background: #8CC8A5;
+}
+
+.bem {
+    background: #B5D66D;
+}
+
+.cansado {
+    background: #A9B8C8;
+}
+
+.ansioso {
+    background: #C69FD5;
+}
+
+.pressionado {
+    background: #E79A7A;
+}
+
+.triste {
+    background: #829BC4;
+}
+
+.legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.legenda span {
+    align-items: center;
+    color: var(--apagado);
+    display: flex;
+    font-size: 11px;
+    gap: 5px;
+}
+
+.legenda .bolinha {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.historico-semanal {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    margin: 20px auto 0;
+    max-width: 1200px;
+    padding: 28px;
+}
+
+.historico-semanal > .descricao {
+    margin-bottom: 20px;
+}
+
+.registro-dia {
+    align-items: flex-start;
+    border-top: 1px solid var(--claro);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 120px 160px 1fr;
+    padding: 18px 0;
+}
+
+.data-registro strong {
+    display: block;
+    font-size: 15px;
+}
+
+.data-registro span {
+    color: var(--apagado);
+    font-size: 13px;
+}
+
+.humor-registro {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.humor-registro .bolinha {
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+}
+
+.influencias {
+    color: var(--apagado);
+    font-size: 13px;
+}
+
+.influencias strong {
+    color: var(--esc);
+}
+
+.sem-registro {
+    color: var(--apagado);
+    font-size: 13px;
+    grid-column: 2 / 4;
+}
+
+.carregando {
+    color: var(--apagado);
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+footer {
+    background: var(--esc);
+    color: #dce9df;
+    font-size: 1.2em;
+    padding: 18px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffc578;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+:is(.cabecalho-calendario button, #nav a):focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 850px) {
+    .painel-superior {
+        grid-template-columns: 1fr;
+    }
+    .analise-mensal {
+        order: 2;
+    }
+    .calendario-area {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+    #titulomenu {
+        max-width: 230px;
+    }
+    #nav {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    #nav a {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    main {
+        padding: 42px 12px 60px;
+    }
+    .titulo-principal {
+        padding-bottom: 30px;
+    }
+    .calendario-area, .analise-mensal, .historico-semanal {
+        padding: 20px 14px;
+    }
+    .dias-calendario {
+        gap: 4px;
+    }
+    .dia {
+        min-height: 50px;
+    }
+    .numero-dia {
+        font-size: 12px;
+    }
+    .bolinha-dia {
+        height: 13px;
+        width: 13px;
+    }
+    .dias-semana span {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    .cabecalho-calendario h2 {
+        font-size: 20px;
+    }
+    .registro-dia {
+        gap: 8px;
+        grid-template-columns: 1fr;
+    }
+    .sem-registro {
+        grid-column: 1;
+    }
+}

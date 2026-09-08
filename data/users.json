@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "nome": "Daniel",
+        "curso": "Engenharia de Software",
+        "periodo": 2,
+        "idade": 18,
+        "email": "daniel@email.com"
+    }
+]

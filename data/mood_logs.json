@@ -1,0 +1,66 @@
+[
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Lazer", "Família"],
+        "detalhes": "Dia tranquilo.",
+        "data": "2026-09-01",
+        "horario": "18:30"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Família"],
+        "detalhes": "",
+        "data": "2026-09-02",
+        "horario": "20:10"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Ansioso",
+        "influencias": ["Estudos", "Provas"],
+        "detalhes": "Muita coisa para estudar.",
+        "data": "2026-09-03",
+        "horario": "14:31"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Cansado",
+        "influencias": ["Trabalho", "Estudos"],
+        "detalhes": "",
+        "data": "2026-09-04",
+        "horario": "21:00"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Ansioso",
+        "influencias": ["Projetos", "Provas"],
+        "detalhes": "",
+        "data": "2026-09-05",
+        "horario": "16:20"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Lazer"],
+        "detalhes": "Consegui descansar.",
+        "data": "2026-09-06",
+        "horario": "19:40"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Energizado",
+        "influencias": ["Lazer", "Alimentação"],
+        "detalhes": "Acordei disposto hoje.",
+        "data": "2026-09-07",
+        "horario": "09:15"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Família", "Relações", "Outro"],
+        "detalhes": null,
+        "data": "2026-09-08",
+        "horario": "16:46"
+    }
+]
