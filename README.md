@@ -1,28 +1,33 @@
 # MindCare - Diário de Saúde Mental e Apoio Universitário
 
 **Tipo:** Health Tech / Bem-Estar / Apoio Estudantil
-**Tema Central:** Acompanhamento de rotina, rastreamento de humor e gestão do estresse no ambiente acadêmico.
+**Tema:** Acompanhamento de rotina, rastreamento de humor e apoio ao bem-estar no ambiente acadêmico.
 
 ---
 
 ## 1. Identificação Acadêmica
 
-| Informação                | Dados                 |
-| ------------------------- | --------------------- |
+| Informação                | Dados                                                                      |
+| ------------------------- | -------------------------------------------------------------------------- |
 | **Instituição de Ensino** | Centro Universitário do Planalto Central Apparecido dos Santos (UNICEPLAC) |
-| **Curso**                 | Engenharia de Software |
-| **Disciplina**            | Projeto Integrado de Certificação em Gorvernança e Gestão de TI  |
-| **Orientador**            | Profº Hudson Neves    |
-| **Projeto**               | Projeto 05 - MindCare |
+| **Curso**                 | Engenharia de Software                                                     |
+| **Disciplina**            | Projeto Integrado de Certificação em Governança e Gestão de TI             |
+| **Orientador**            | Prof. Hudson Neves                                                         |
+| **Projeto**               | Projeto 05 - MindCare                                                      |
 
 ---
 
-## 2. Descrição do Projeto
+## 2. Sobre o Projeto
 
-O MindCare é uma aplicação desenvolvida para auxiliar no acompanhamento do bem-estar e da saúde mental de estudantes universitários. O sistema permite que o aluno registre diariamente como está se sentindo, identificando seu humor e os principais fatores que influenciaram seu estado emocional, como estudos, provas, família, trabalho e lazer.
+O **MindCare** é uma aplicação voltada ao acompanhamento do bem-estar de estudantes universitários. O sistema foi desenvolvido com o objetivo de oferecer uma experiência simples e acolhedora para que o estudante possa registrar seu estado emocional, identificar fatores relacionados à sua rotina e acompanhar suas próprias tendências ao longo do tempo.
 
-Além do check-in emocional, a plataforma oferece recursos para acompanhar tendências de humor, acessar exercícios de respiração e conteúdos relacionados à organização dos estudos, gestão do tempo e bem-estar. O projeto também conta com uma área destinada ao agendamento de acolhimento psicológico ou psicopedagógico, facilitando o acesso do estudante ao suporte oferecido pela instituição.
+A aplicação possui como funcionalidade principal o **check-in emocional diário**, no qual o estudante informa como está se sentindo, seleciona fatores que podem ter influenciado seu humor e, opcionalmente, registra uma observação sobre seu dia.
 
+O projeto também contempla uma área de **Tendências e Autoconhecimento**, destinada à visualização do histórico de humor e à identificação de padrões ao longo dos dias e semanas.
+
+Como parte da proposta do sistema, estão previstas ainda áreas de **Descompressão e Exercícios** e **Agendamento de Apoio Psicopedagógico**, que serão desenvolvidas nas próximas etapas do projeto.
+
+> **Observação:** o MindCare é um projeto acadêmico e não tem como objetivo realizar diagnósticos ou substituir acompanhamento profissional especializado.
 
 ---
 
@@ -30,37 +35,35 @@ Além do check-in emocional, a plataforma oferece recursos para acompanhar tend�
 
 ### Objetivo Geral
 
-O objetivo do MindCare é proporcionar uma experiência simples, acolhedora e de fácil utilização, ajudando o estudante a compreender melhor sua rotina e seus sentimentos, além de facilitar o acesso ao apoio disponível no ambiente universitário.
+Desenvolver uma aplicação web que auxilie estudantes universitários no acompanhamento de seu bem-estar emocional e na percepção de fatores relacionados à sua rotina acadêmica, além de facilitar o acesso aos recursos de apoio disponíveis no ambiente universitário.
 
 ### Objetivos Específicos
 
-* ## Objetivos Específicos
-
-* Permitir que os estudantes registrem diariamente seu estado emocional de forma simples e rápida.
-* Identificar os principais fatores que influenciam o humor e a rotina dos estudantes.
-* Ajudar o usuário a acompanhar suas variações de humor ao longo do tempo.
-* Disponibilizar exercícios de respiração e conteúdos para auxiliar na redução do estresse.
-* Oferecer dicas relacionadas à organização dos estudos, sono e gestão do tempo.
-* Facilitar o acesso dos estudantes ao apoio psicológico e psicopedagógico da instituição.
-* Criar uma interface simples, acolhedora e fácil de utilizar.
-* Promover maior atenção e consciência sobre o próprio bem-estar durante a rotina acadêmica.
-
-  
+* Permitir o registro diário do estado emocional do estudante.
+* Identificar fatores que podem estar relacionados ao humor do usuário.
+* Permitir o acompanhamento do histórico de humor ao longo do tempo.
+* Apresentar tendências e informações para auxiliar no autoconhecimento.
+* Disponibilizar exercícios de descompressão e respiração.
+* Oferecer conteúdos relacionados à organização dos estudos, sono, gestão do tempo e bem-estar.
+* Facilitar o acesso ao apoio psicopedagógico disponibilizado pela instituição.
+* Desenvolver uma interface simples, acolhedora, responsiva e acessível.
+* Aplicar conhecimentos de desenvolvimento Frontend, Backend, banco de dados e integração de sistemas.
 
 ---
 
-## 4. Problema que o Sistema Resolve
+## 4. Problema
 
-Muitos estudantes acabam ficando estressados, ansiosos e sobrecarregados por causa de provas, trabalhos, estudos e outros problemas do dia a dia. Além disso, nem sempre conseguem perceber o que está afetando seu humor ou sabem onde procurar ajuda.
+A rotina universitária pode envolver provas, trabalhos, projetos, estudos, compromissos profissionais e questões pessoais que podem influenciar o bem-estar do estudante.
 
-O MindCare foi criado para ajudar nisso, permitindo que o aluno registre como está se sentindo, veja o que pode estar influenciando seu humor e tenha acesso a exercícios, dicas e apoio psicológico. Dessa forma, o sistema busca tornar mais fácil o cuidado com o bem-estar durante a vida acadêmica.
+Muitas vezes, o estudante não possui uma forma simples de registrar como está se sentindo ou de observar mudanças em seu próprio estado emocional ao longo do tempo. Além disso, o acesso aos recursos de apoio disponíveis na instituição pode não ser centralizado.
+
+O MindCare busca contribuir para esse cenário por meio de uma aplicação que reúne **registro emocional, acompanhamento de tendências, recursos de descompressão e acesso ao apoio universitário** em um único ambiente.
 
 ---
 
 ## 5. Público-Alvo
 
-Estudantes Universitários.
-
+O público-alvo principal do MindCare são **estudantes universitários**, especialmente aqueles que desejam acompanhar melhor sua rotina e seu bem-estar durante a vida acadêmica.
 
 ---
 
@@ -68,342 +71,551 @@ Estudantes Universitários.
 
 ### 6.1 Check-in Emocional Diário
 
-* [Funcionalidade]
-* [Funcionalidade]
-* [Funcionalidade]
+Permite que o estudante registre:
 
-### 6.2 Dashboard de Tendências e Autoconhecimento
+* Estado emocional do dia;
+* Fatores que influenciaram seu humor;
+* Observação opcional sobre o dia;
+* Data e horário do registro.
 
-* [Funcionalidade]
-* [Funcionalidade]
-* [Funcionalidade]
+Os estados emocionais disponíveis atualmente são:
 
-### 6.3 Espaço de Descompressão e Exercícios
+* Energizado;
+* Calmo;
+* Bem;
+* Cansado;
+* Ansioso;
+* Pressionado;
+* Triste.
 
-* [Funcionalidade]
-* [Funcionalidade]
-* [Funcionalidade]
+Os fatores disponíveis incluem:
 
-### 6.4 Central de Agendamento
+* Estudos;
+* Projetos;
+* Família;
+* Relações;
+* Finanças;
+* Provas;
+* Alimentação;
+* Trabalho;
+* Lazer;
+* Outro.
 
-* [Funcionalidade]
-* [Funcionalidade]
-* [Funcionalidade]
+Atualmente, os registros realizados no frontend são armazenados no **localStorage do navegador**.
+
+---
+
+### 6.2 Tendências e Autoconhecimento
+
+A área de Tendências e Autoconhecimento permite visualizar:
+
+* Histórico de humor;
+* Calendário mensal com os registros;
+* Humores mais frequentes no mês;
+* Histórico semanal;
+* Fatores associados aos registros.
+
+Na versão atual do frontend, os registros históricos são obtidos a partir de dados simulados presentes em `mood_logs.json`, enquanto o registro realizado no dia atual pode ser obtido do `localStorage`.
+
+---
+
+### 6.3 Descompressão e Exercícios
+
+Funcionalidade prevista para disponibilizar:
+
+* Exercícios de respiração;
+* Orientações visuais;
+* Áudios;
+* Conteúdos relacionados ao bem-estar;
+* Dicas de organização dos estudos;
+* Conteúdos sobre sono e gestão do tempo.
+
+**Status:** em desenvolvimento.
+
+---
+
+### 6.4 Agendamento de Apoio Psicopedagógico
+
+Funcionalidade prevista para permitir:
+
+* Visualização dos profissionais disponíveis;
+* Consulta de horários;
+* Seleção de data e horário;
+* Confirmação de agendamento;
+* Cancelamento ou reagendamento.
+
+**Status:** em desenvolvimento.
 
 ---
 
 ## 7. Tecnologias Utilizadas
 
-| Tecnologia   | Utilização              |
-| ------------ | ----------------------- |
-| HTML5 | Conteudo Do Projeto            |
-| CSS3  | Estilo do projeto |
-| JavaScript | Fucionalidades do Projeto |
+| Tecnologia       | Utilização                                                                       |
+| ---------------- | -------------------------------------------------------------------------------- |
+| **HTML5**        | Estrutura das páginas e conteúdo da aplicação                                    |
+| **CSS3**         | Estilização, layout, responsividade e identidade visual                          |
+| **JavaScript**   | Interações, manipulação do DOM, validações e gerenciamento dos dados no frontend |
+| **JSON**         | Armazenamento de dados simulados utilizados durante o desenvolvimento            |
+| **LocalStorage** | Armazenamento temporário dos check-ins realizados no navegador                   |
+| **Git**          | Controle de versão                                                               |
+| **GitHub**       | Hospedagem e gerenciamento do código-fonte                                       |
 
 ---
 
 ## 8. Frameworks e Bibliotecas
 
-* [Framework/Biblioteca]
-* [Framework/Biblioteca]
-* [Framework/Biblioteca]
+Atualmente, o frontend está sendo desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, sem a utilização de frameworks.
 
-> Caso não sejam utilizados frameworks ou bibliotecas, informe aqui.
+Bibliotecas e frameworks poderão ser incorporados nas próximas etapas, caso sejam necessários para funcionalidades específicas do projeto.
 
 ---
 
 ## 9. Arquitetura da Solução
 
-[Descreva aqui a arquitetura utilizada no projeto.]
+### Arquitetura atual
 
-### Fluxo da aplicação
+Durante a etapa de desenvolvimento do frontend, o sistema utiliza uma arquitetura simplificada:
 
 ```text
 Usuário
    ↓
-Interface do sistema
+Interface Web
    ↓
-[Frontend]
-   ↓
-[Backend / APIs]
-   ↓
-[Banco de Dados]
+JavaScript
+   ├── localStorage
+   └── Arquivos JSON simulados
 ```
 
-[Edite o fluxo acima de acordo com a arquitetura real do projeto.]
+O `localStorage` é utilizado para armazenar temporariamente os registros realizados pelo usuário no navegador.
+
+Os arquivos JSON são utilizados como fonte de dados simulados para funcionalidades que ainda serão integradas ao backend.
+
+### Arquitetura prevista
+
+Após a implementação do backend, a arquitetura deverá evoluir para:
+
+```text
+Usuário
+   ↓
+Frontend
+   ↓
+API
+   ↓
+Backend
+   ↓
+Banco de Dados
+```
+
+Nessa etapa, o backend será responsável pelo gerenciamento de usuários, autenticação, registros emocionais, agendamentos e demais informações da aplicação.
 
 ---
 
 ## 10. Modelagem do Banco de Dados
 
-**Banco de dados utilizado:** [Nome do banco de dados]
+**Status:** ainda não implementado.
 
-[Adicione aqui a descrição da modelagem do banco de dados.]
+Durante a etapa atual, os dados são simulados por meio de arquivos JSON e o registro do dia atual utiliza o `localStorage`.
 
-### Entidades principais
+A modelagem do banco de dados será definida durante a etapa de desenvolvimento do Backend.
 
-* [Entidade 1]
-* [Entidade 2]
-* [Entidade 3]
-* [Entidade 4]
+### Entidades previstas
+
+Entre as principais entidades previstas estão:
+
+* Usuários;
+* Registros de humor;
+* Profissionais;
+* Agendamentos;
+* Recursos.
 
 ### Diagrama
 
-> **[Inserir aqui a imagem do modelo/diagrama do banco de dados]**
+O diagrama do banco de dados será adicionado após a conclusão da modelagem.
 
 ---
 
-## 11. Dados Simulados / Mocks
+## 11. Dados Simulados
 
+Durante o desenvolvimento do frontend, arquivos JSON são utilizados para simular dados que posteriormente serão gerenciados pelo backend.
 
+### `users.json`
 
-```text
-mood_logs.json  
-professionals.json —
-resources.json — 
-```
+Contém dados fictícios utilizados para representar o usuário da aplicação durante o desenvolvimento do frontend.
+
+Entre os dados estão:
+
+* Identificador;
+* Nome;
+* Curso;
+* Período;
+* Idade;
+* E-mail.
 
 ### `mood_logs.json`
 
-Armazena registros simulados de humor dos estudantes, que podem ser usados para mostrar os gráficos de tendências.
+Contém registros fictícios de humor utilizados para demonstrar o histórico e as tendências do estudante.
+
+Os registros possuem informações como:
+
+* Usuário;
+* Humor;
+* Influências;
+* Observação;
+* Data;
+* Horário.
 
 ### `professionals.json`
 
- contém informações simuladas dos profissionais disponíveis, como especialidade, horários e disponibilidade para atendimento.
+Será utilizado para armazenar dados simulados dos profissionais disponíveis para atendimento, como nome, especialidade, horários e disponibilidade.
 
 ### `resources.json`
 
-reúne conteúdos simulados, como dicas, artigos, exercícios de respiração e materiais relacionados ao bem-estar.
+Será utilizado para armazenar conteúdos simulados relacionados a exercícios, respiração, organização dos estudos, sono, gestão do tempo e bem-estar.
 
 ---
 
 ## 12. APIs
 
-### APIs do sistema
+As APIs abaixo fazem parte da arquitetura planejada para a etapa de Backend.
 
-| Método | Endpoint                         | Descrição   |
-| ------ | -------------------------------- | ----------- |
-| `POST` | `/api/v1/mood-logs`              | [Descrição] |
-| `GET`  | `/api/v1/analytics/mood-history` | [Descrição] |
-| `POST` | `/api/v1/appointments`           | [Descrição] |
+| Método | Endpoint                         | Descrição                                         |
+| ------ | -------------------------------- | ------------------------------------------------- |
+| `POST` | `/api/v1/mood-logs`              | Registrar um novo check-in emocional              |
+| `GET`  | `/api/v1/analytics/mood-history` | Consultar histórico e dados para análise de humor |
+| `POST` | `/api/v1/appointments`           | Criar um novo agendamento                         |
 
-### Integrações Futuras
+### Integrações futuras
 
-* [Integração futura]
-* [Integração futura]
-* [Integração futura]
+Entre as integrações que poderão ser implementadas estão:
+
+* Sincronização com Google Calendar;
+* Sincronização com Outlook Calendar;
+* Notificações;
+* Envio de e-mails;
+* Integração com WhatsApp;
+* Recursos adicionais de segurança e proteção de dados.
 
 ---
 
 ## 13. Pré-requisitos
 
-Para executar o projeto, será necessário:
+Para executar a versão atual do projeto, é necessário:
 
-* Um computador ou notebook.
-* Um navegador atualizado, como Google Chrome, Microsoft Edge ou Mozilla Firefox.
-* JavaScript habilitado no navegador.
-* Os arquivos do projeto disponíveis no computador.
-* Conexão com a internet, caso sejam utilizadas funcionalidades ou recursos externos.
+* Computador ou notebook;
+* Navegador atualizado;
+* JavaScript habilitado;
+* Editor de código, como Visual Studio Code;
+* Extensão **Live Server** ou servidor local equivalente.
+
+Não são necessárias dependências externas ou comandos de instalação de pacotes para executar o frontend atual.
+
 ---
 
 ## 14. Instalação
 
-### 1. Clonar o projeto
+### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/danielferreira76/mindcare-diario-de-saude-mental-universitario/
+git clone https://github.com/DanielFerreira76/mindcare-diario-de-saude-mental-universitario.git
 ```
 
-### 2. Acessar a pasta
+### 2. Acessar a pasta do projeto
 
 ```bash
-cd [NOME-DA-PASTA]
+cd mindcare-diario-de-saude-mental-universitario
 ```
 
-### 3. Instalar as dependências
+### 3. Abrir o projeto
 
-```bash
-[COMANDO DE INSTALAÇÃO]
-```
+Abra a pasta do projeto no Visual Studio Code.
 
-### 4. Configurar o projeto
+### 4. Executar com Live Server
 
-[Descreva aqui as configurações necessárias.]
+Abra o arquivo `index.html` e execute-o utilizando a extensão **Live Server**.
+
+> O uso de um servidor local é recomendado porque as páginas utilizam `fetch()` para carregar arquivos JSON. A abertura direta dos arquivos HTML pelo sistema de arquivos pode impedir o carregamento desses dados devido às políticas de segurança do navegador.
 
 ---
 
 ## 15. Como Executar
 
-```bash
-[COMANDO PARA EXECUTAR O PROJETO]
-```
+Após abrir o projeto no Visual Studio Code:
 
-Após executar, acesse:
-
-```text
-[URL LOCAL DO PROJETO]
-```
+1. Abra o arquivo `index.html`.
+2. Clique com o botão direito sobre o arquivo.
+3. Selecione **Open with Live Server**.
+4. O projeto será aberto no navegador.
+5. Acesse a página de Check-in Diário.
+6. Realize um check-in para testar o armazenamento local.
+7. Acesse a área de Tendências e Autoconhecimento para visualizar os registros disponíveis.
 
 ---
 
 ## 16. Estrutura do Projeto
 
+A estrutura atual do frontend está organizada da seguinte maneira:
+
 ```text
 MindCare/
 │
-├── [pasta]
-│   ├── [arquivo]
-│   └── [arquivo]
+├── data/
+│   ├── mood_logs.json
+│   └── users.json
 │
-├── [pasta]
-│   ├── [arquivo]
-│   └── [arquivo]
+├── img/
+│   ├── alimentacao.png
+│   ├── ansioso.png
+│   ├── bem.png
+│   ├── calmo.png
+│   ├── cansado.png
+│   ├── estudos.png
+│   ├── familia.png
+│   ├── financas.png
+│   ├── lazer.png
+│   ├── projetos.png
+│   ├── relacoes.png
+│   ├── sobrecarregado.png
+│   ├── trabalho.png
+│   └── triste.png
 │
-├── [arquivo]
+├── pag/
+│   ├── tendencias.html
+│   ├── tendencias.css
+│   └── tendencias.js
+│
+├── index.html
+├── script.js
+├── style.css
+├── favicon.ico
 └── README.md
 ```
 
-> Atualize esta estrutura de acordo com os arquivos existentes no projeto.
+> Arquivos como `professionals.json` e `resources.json`, além das páginas de Descompressão e Agendamento, serão incorporados conforme o desenvolvimento dessas funcionalidades.
 
 ---
 
 ## 17. Exemplos de Uso
 
-### Exemplo 1 - Check-in
+### Exemplo 1 — Check-in Emocional
 
-O aluno acessa a página inicial do MindCare e responde à pergunta “Como você está se sentindo hoje?”. Em seguida, escolhe seu humor, seleciona os fatores que influenciaram seu dia, como estudos, provas ou família, e pode escrever uma observação. Depois, clica em “Registrar check-in” para salvar o registro.
+O estudante acessa a página inicial e responde à pergunta sobre como está se sentindo. Em seguida, seleciona seu humor, escolhe os fatores que influenciaram seu estado emocional e pode adicionar uma observação.
 
-### Exemplo 2 - Tendências
+Ao clicar em **"Registrar check-in"**, o sistema verifica se já existe um registro para o dia e, caso não exista, salva o check-in no armazenamento local do navegador.
 
-O aluno acessa a área de Tendências e Autoconhecimento para visualizar seus registros de humor ao longo da semana ou do mês. Com isso, consegue perceber mudanças no seu humor e identificar possíveis relações com situações da sua rotina acadêmica.
+---
 
-### Exemplo 3 - Agendamento
+### Exemplo 2 — Tendências e Autoconhecimento
 
-O aluno acessa a área de Agendamento de Apoio Psicopedagógico, verifica os profissionais disponíveis e escolhe uma data e horário para o atendimento. Após confirmar, o sistema apresenta as informações do agendamento para facilitar o acompanhamento da consulta.
+O estudante acessa a área de Tendências e Autoconhecimento para visualizar seus registros de humor.
+
+A página apresenta um calendário mensal, uma análise dos humores mais frequentes e um histórico semanal contendo os registros e as influências informadas.
+
+---
+
+### Exemplo 3 — Apoio Psicopedagógico
+
+Nas próximas etapas do projeto, o estudante poderá acessar a área de apoio psicopedagógico, consultar profissionais e horários disponíveis e realizar um agendamento.
 
 ---
 
 ## 18. Capturas de Tela
 
-### Tela Inicial
+As capturas de tela serão adicionadas conforme as funcionalidades forem concluídas.
 
-> **[Inserir imagem da tela inicial aqui]**
+### Check-in Diário
 
-### Check-in Emocional
+![Página de Check-in Diário](prints/print1.png)
 
-> **[Inserir imagem da tela de check-in aqui]**
+### Tendências e Autoconhecimento
 
-### Dashboard
-
-> **[Inserir imagem do dashboard aqui]**
+![Página de Tendências e Autoconhecimento](prints/print2.png)
+![Página de Tendências e Autoconhecimento](prints/print3.png)
 
 ### Descompressão e Exercícios
 
-> **[Inserir imagem desta tela aqui]**
+> **[Inserir captura de tela quando a funcionalidade estiver concluída]**
 
 ### Agendamento
 
-> **[Inserir imagem da tela de agendamento aqui]**
+> **[Inserir captura de tela quando a funcionalidade estiver concluída]**
 
 ---
 
 ## 19. Equipe do Projeto
 
-| Integrante | Função                 |
-| ---------- | ---------------------- |
-| Daniel ferreira vieira                  |                   |
-| Cleber JÚnio Da Silva Souza          |                        |
-| Gabriel Garbosa luiz     |                        |
-| Júnio Gomes Pereira    |                        |
-| Artur Rocha Araújo    |                       |
-| joão Pedro Alves Soares   |                       |
-| Daniel Costa      |       |
-|  ítalo rodrigues dos santos      |         |
-|  Davi Martins Fagundes      |         |
+| Integrante                      | Função principal                                               |
+| ------------------------------- | -------------------------------------------------------------- |
+| **Daniel Ferreira Vieira**      | Liderança, Desenvolvimento Frontend e Arquitetura/orientação do projeto |
+| **Cleber Júnio da Silva Souza** | Documentação do Frontend |
+| **Gabriel Barbosa Luiz**        | Desenvolvimento Backend |
+| **Júnio Gomes Pereira**         | QA e testes de responsividade |
+| **Arthur Rocha Araújo**         | UI,UX e testes de compatibilidade |
+| **João Pedro Alves Soares**     | Desenvolvimento Backend |
+| **Daniel Costa Alves da Silva** | Desenvolvimento Backend |
+| **Ítalo Rodrigues dos Santos**  | Documentação do Backend |
+| **Davi Martins Fagundes**       | Desenvolvimento Backend |
 
-
-**Orientador:** Profº Hudson Neves
+**Orientador:** Prof. Hudson Neves
 
 ---
 
 ## 20. Divisão de Responsabilidades
 
-### Scrum Master
+### Liderança e Arquitetura
 
-[Nome do integrante]
+**Daniel Ferreira Vieira**
 
-* [Responsabilidade]
-* [Responsabilidade]
+* Liderança e organização da equipe;
+* Desenvolvimento do Frontend;
+* Definição da interface e experiência do usuário;
+* Organização da arquitetura da aplicação;
+* Organização do fluxo de trabalho com Git e GitHub.
 
-### UI/UX Designers
+### Documentação
 
-[Nome do integrante]
-[Nome do integrante]
+**Cleber Júnio da Silva Souza**
 
-* [Responsabilidade]
-* [Responsabilidade]
+* Documentação das funcionalidades do Frontend;
+* Organização da documentação relacionada à interface.
 
-### Desenvolvedores Frontend
+**Ítalo Rodrigues dos Santos**
 
-[Nome do integrante]
-[Nome do integrante]
-[Nome do integrante]
+* Documentação relacionada ao Backend;
+* Registro das decisões e funcionalidades da parte de servidor.
 
-* [Responsabilidade]
-* [Responsabilidade]
+### Backend
 
-### QA / Tech Writer
+**João Pedro Alves Soares**
 
-[Nome do integrante]
+* Desenvolvimento de funcionalidades Backend;
+* Implementação utilizando Java.
 
-* [Responsabilidade]
-* [Responsabilidade]
+**Gabriel Barbosa Luiz**
+
+* Desenvolvimento Backend;
+* Implementação utilizando Java.
+
+**Davi Martins Fagundes**
+
+* Desenvolvimento Backend;
+* Implementação utilizando Java.
+
+**Daniel Costa Alves da Silva**
+
+* Desenvolvimento Backend;
+* Implementação utilizando Java.
+
+### UI, UX, QA e Testes
+
+**Júnio Gomes Pereira**
+
+* Verificação da interface;
+* Testes de responsividade em dispositivos móveis;
+* Identificação e registro de problemas encontrados.
+
+**Arthur Rocha Araújo**
+
+* Definição e avaliação da interface e experiência do usuário;
+* Testes das funcionalidades;
+* Testes de compatibilidade em diferentes navegadores;
+* Identificação e registro de problemas encontrados.
 
 ---
 
 ## 21. Melhorias Futuras
 
-* [Melhoria futura 1]
-* [Melhoria futura 2]
-* [Melhoria futura 3]
-* [Melhoria futura 4]
-* [Melhoria futura 5]
+Entre as melhorias previstas para as próximas etapas estão:
+
+* Implementação do Backend;
+* Implementação de banco de dados;
+* Sistema de cadastro de usuários;
+* Sistema de login e autenticação;
+* Associação dos registros aos usuários autenticados;
+* Persistência dos dados no servidor;
+* Implementação completa do Dashboard;
+* Implementação dos exercícios de descompressão;
+* Implementação do sistema de agendamento;
+* Integração com calendário;
+* Sistema de notificações;
+* Melhorias de segurança e proteção dos dados;
+* Deploy completo da aplicação em ambiente de nuvem.
 
 ---
 
 ## 22. Segurança e Privacidade
 
-[Descreva aqui as medidas de segurança e privacidade implementadas no projeto.]
+Por lidar com informações relacionadas ao bem-estar dos usuários, o MindCare considera a proteção dos dados uma parte importante do desenvolvimento.
 
-### Possíveis implementações futuras
+Na versão atual do frontend, os dados utilizados são fictícios e os check-ins são armazenados localmente no navegador por meio do `localStorage`.
 
-* [Criptografia]
-* [Controle de acesso]
-* [Proteção dos dados]
-* [Outra implementação]
+Na implementação do Backend, deverão ser consideradas medidas adicionais de segurança, incluindo:
+
+* Autenticação de usuários;
+* Controle de acesso;
+* Proteção das informações pessoais;
+* Armazenamento seguro de senhas;
+* Criptografia de dados sensíveis;
+* Validação das informações recebidas pela API;
+* Proteção contra acesso não autorizado.
+
+> O projeto acadêmico não deve ser considerado, em sua versão atual, uma aplicação clínica ou um sistema de atendimento médico.
 
 ---
 
 ## 23. Status do Projeto
 
-**Status:** [Em desenvolvimento / MVP / Concluído]
+**Status:** Em desenvolvimento
 
-**Versão atual:** [Versão]
+**Versão atual:** 0.1.0 — Frontend
+
+### Funcionalidades em desenvolvimento
+
+* [x] Estrutura inicial do projeto
+* [x] Identidade visual
+* [x] Página de Check-in Diário
+* [x] Seleção de humor
+* [x] Seleção de fatores de influência
+* [x] Campo de observação
+* [x] Validação do check-in
+* [x] Armazenamento local do check-in
+* [x] Estrutura inicial de dados simulados
+* [x] Página de Tendências e Autoconhecimento
+* [x] Calendário mensal
+* [x] Análise mensal
+* [x] Histórico semanal
+* [ ] Página de Descompressão e Exercícios
+* [ ] Página de Agendamento
+* [ ] Backend
+* [ ] Banco de Dados
+* [ ] Sistema de autenticação
+* [ ] Integração Fullstack
+* [ ] Deploy da aplicação
+* [ ] Testes finais
 
 ---
 
 ## 24. Licença
 
-**Licença:** [A ser definido pela equipe]
+Este projeto foi desenvolvido para fins **acadêmicos** no âmbito do curso de Engenharia de Software.
+
+A definição de uma licença específica para distribuição do código será realizada posteriormente pela equipe.
 
 ---
 
 ## 25. Repositório
 
-**GitHub:** [Link do repositório]
+O código-fonte do projeto está disponível no GitHub:
+
+**github.com/DanielFerreira76/mindcare-diario-de-saude-mental-universitario**
 
 ---
 
 ## 26. Observações
 
-[Adicione aqui qualquer informação importante sobre o projeto, desenvolvimento ou utilização do sistema.]
+O MindCare encontra-se em desenvolvimento e sua arquitetura será evoluída gradualmente durante as etapas do projeto.
+
+A versão atual possui foco no desenvolvimento e validação do **Frontend**, utilizando dados simulados em arquivos JSON e armazenamento local para algumas funcionalidades.
+
+Nas próximas etapas, o projeto será integrado a um Backend, permitindo a persistência centralizada dos dados, autenticação de usuários e implementação das demais funcionalidades previstas na proposta.
+
+**Projeto desenvolvido pela equipe MindCare — Engenharia de Software / UNICEPLAC.**
