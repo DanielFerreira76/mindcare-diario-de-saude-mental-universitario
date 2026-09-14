@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare | Descompressão e Exercícios</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="descompreessao.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logotipo.png" alt="Logo">
+        <h1 id="titulomenu">Diário de Saúde Mental e Apoio Universitário</h1>
+        <section id="nav">
+            <a href="../index.html">Check-in Diário</a>
+            <a href="pag/tendencias.html">Tendências e Autoconhecimento</a>
+            <a href="#">Agendamento de Apoio Psicopedagógico</a>
+        </section>
+    </header>
+    <main>
+        <h1 class="titulo-principal">Descompressão e Exercícios</h1>
+        <p class="subtitulo-principal">
+            Reserve o tempo que precisar para desacelerar e cuidar de você.
+        </p>
+        <section class="respiracao">
+            <h2>Exercício de Respiração</h2>
+            <div class="respiracao-conteudo">
+                <div class="circulo-respiracao">
+                    <div class="circulo-interno" id="circulo-interno"></div>
+                    <div class="controle-respiracao">
+                        <button id="botao-respiracao">Iniciar Exercício</button>
+                        <span id="indicador-respiracao"></span>
+                    </div>
+                </div>
+            </div>
+            <p class="instrucao-respiracao">
+                Acompanhe o movimento do círculo.
+            </p>
+        </section>
+        <section class="audio-section">
+            <h2 class="titulo-audio"><img src="../img/audio.png" alt="Headphone" class="icone-audio">Áudio Ambiente</h2>
+            <audio id="audio-ambiente" controls preload="metadata">
+                <source src="../audio/somambiente.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+        <section class="dicas">
+            <h2>Dicas para o seu dia</h2>
+            <div class="cards-dicas">
+                <article class="card-dica">
+                    <div class="icone-dica">
+                        <img src="../img/estudos.png" alt="Ícone representando estudos">
+                    </div>
+                    <h3>Estudos</h3>
+                    <p>
+                        Dicas para a sua rotina acadêmica
+                    </p>
+                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/estudos.html" data-titulo="Dicas para a rotina acadêmica">Ler conteúdo</button>
+                </article>
+                <article class="card-dica">
+                    <div class="icone-dica">
+                        <img src="../img/sono.png" alt="Ícone representando sono">
+                    </div>
+                    <h3>Sono</h3>
+                    <p>
+                        Dicas para a sua rotina de descanso
+                    </p>
+                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/sono.html" data-titulo="Cuidados com o sono">Ler conteúdo</button>
+                </article>
+                <article class="card-dica">
+                    <div class="icone-dica">
+                        <img src="../img/tempo.png" alt="Ícone representando gestão do tempo">
+                    </div>
+                    <h3>Gestão de tempo</h3>
+                    <p>
+                        Dicas para organizar a sua rotina
+                    </p>
+                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/gestao-tempo.html" data-titulo="Gestão do tempo">Ler conteúdo</button>
+                </article>
+            </div>
+        </section>
+        <div id="modal-conteudo" class="modal" aria-hidden="true">
+            <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+                <div class="modal-cabecalho">
+                    <h2 id="titulo-modal">Conteúdo</h2>
+                    <button id="fechar-modal" type="button" aria-label="Fechar conteúdo">&times;</button>
+                </div>
+                <iframe id="iframe-conteudo" src="" title="Conteúdo educativo"></iframe>
+            </div>
+        </div>
+        <p class="frase-final">
+            Cuidar da sua rotina é cuidar de você.
+        </p>
+    </main>
+    <footer>
+        Projeto criado por <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a> e  <a href="#" class="github">link</a> sob orientação de  <a href="#" class="github">Hudson Neves</a>
+    </footer>
+    <script src="descompressao.js"></script>
+</body>
+</html>
