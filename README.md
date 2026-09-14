@@ -25,7 +25,9 @@ A aplicação possui como funcionalidade principal o **check-in emocional diári
 
 O projeto também contempla uma área de **Tendências e Autoconhecimento**, destinada à visualização do histórico de humor e à identificação de padrões ao longo dos dias e semanas.
 
-Como parte da proposta do sistema, estão previstas ainda áreas de **Descompressão e Exercícios** e **Agendamento de Apoio Psicopedagógico**, que serão desenvolvidas nas próximas etapas do projeto.
+O sistema também possui uma área de **Descompressão e Exercícios**, que disponibiliza um exercício visual de respiração, áudio ambiente e conteúdos relacionados à organização dos estudos, sono e gestão do tempo. A área de Agendamento de Apoio Psicopedagógico permanece em desenvolvimento.
+
+Como parte da proposta do sistema, está previstas ainda a área de **Agendamento de Apoio Psicopedagógico**, que será desenvolvida nas próximas etapas do projeto.
 
 > **Observação:** o MindCare é um projeto acadêmico e não tem como objetivo realizar diagnósticos ou substituir acompanhamento profissional especializado.
 
@@ -121,16 +123,23 @@ Na versão atual do frontend, os registros históricos são obtidos a partir de 
 
 ### 6.3 Descompressão e Exercícios
 
-Funcionalidade prevista para disponibilizar:
+A área de Descompressão e Exercícios disponibiliza recursos para auxiliar o estudante a realizar pequenas pausas durante sua rotina acadêmica.
 
-* Exercícios de respiração;
-* Orientações visuais;
-* Áudios;
-* Conteúdos relacionados ao bem-estar;
-* Dicas de organização dos estudos;
-* Conteúdos sobre sono e gestão do tempo.
+Atualmente, a funcionalidade possui:
 
-**Status:** em desenvolvimento.
+* Exercício visual de respiração;
+* Animação de expansão e redução do círculo respiratório;
+* Indicação visual dos momentos de inspiração e expiração;
+* Cinco ciclos automáticos de respiração;
+* Áudio ambiente;
+* Conteúdos sobre organização dos estudos;
+* Conteúdos relacionados ao sono;
+* Conteúdos sobre gestão do tempo;
+* Modal para visualização dos conteúdos educativos.
+
+Os conteúdos são apresentados de forma simples e informativa, sem finalidade de diagnóstico ou tratamento.
+
+**Status:** concluído no frontend.
 
 ---
 
@@ -360,11 +369,16 @@ MindCare/
 │
 ├── data/
 │   ├── mood_logs.json
-│   └── users.json
+│   ├── users.json
+│   └── wellbeing-content.json
+│
+├── audio/
+│   └── somambiente.mp3
 │
 ├── img/
 │   ├── alimentacao.png
 │   ├── ansioso.png
+│   ├── audio.png
 │   ├── bem.png
 │   ├── calmo.png
 │   ├── cansado.png
@@ -379,6 +393,14 @@ MindCare/
 │   └── triste.png
 │
 ├── pag/
+│   ├── conteudos/
+│   │   ├── estudos.html
+│   │   ├── sono.html
+│   │   └── gestao-tempo.html
+│   │
+│   ├── descompressao.html
+│   ├── descompressao.css
+│   ├── descompressao.js
 │   ├── tendencias.html
 │   ├── tendencias.css
 │   └── tendencias.js
@@ -433,7 +455,8 @@ As capturas de tela serão adicionadas conforme as funcionalidades forem conclu�
 
 ### Descompressão e Exercícios
 
-> **[Inserir captura de tela quando a funcionalidade estiver concluída]**
+![Página de Descompressão e Exercícios](prints/print4.png)
+![Página de Descompressão e Exercícios](prints/print5.png)
 
 ### Agendamento
 
@@ -583,7 +606,12 @@ Na implementação do Backend, deverão ser consideradas medidas adicionais de s
 * [x] Calendário mensal
 * [x] Análise mensal
 * [x] Histórico semanal
-* [ ] Página de Descompressão e Exercícios
+* [x] Página de Descompressão e Exercícios
+* [x] Exercício visual de respiração
+* [x] Cinco ciclos automáticos de respiração
+* [x] Áudio ambiente
+* [x] Conteúdos educativos sobre estudos, sono e gestão do tempo
+* [x] Modal para exibição dos conteúdos
 * [ ] Página de Agendamento
 * [ ] Backend
 * [ ] Banco de Dados
