@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+:root {
+    --esc: #180e15;
+    --apagado: #76666e;
+    --papel: #f5eff7;
+    --roxo: #C69FD5;
+    --roxoescuro: #542344;
+    --amarelo: #FF9000;
+    --claro: #d6e0da;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--papel);
+    color: var(--esc);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    line-height: 1.5;
+}
+button {
+    font: inherit;
+}
+
+header {
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid var(--claro);
+    display: flex;
+    gap: 16px;
+    padding: 18px clamp(20px, 6vw, 90px);
+}
+header > img {
+    height: 54px;
+    width: 54px;
+}
+#titulomenu {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 2.2vw, 29px);
+    font-weight: 600;
+    line-height: 1.1;
+    max-width: 700px;
+}
+#nav {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+#nav a {
+    background: transparent;
+    border-radius: 8px;
+    color: var(--apagado);
+    font-size: 14px;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+#nav a:hover {
+    background: var(--roxo);
+    color: var(--roxoescuro);
+}
+
+main {
+    background: linear-gradient(135deg, var(--papel) 42%, #f2e5df 100%);
+    min-height: calc(100vh - 150px);
+    padding: clamp(42px, 7vw, 88px) 20px 80px;
+}
+
+.titulo-principal {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.08;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+}
+.subtitulo-principal {
+    color: var(--apagado);
+    font-size: 17px;
+    margin: 12px auto 0;
+    max-width: 700px;
+    text-align: center;
+}
+
+.respiracao, .audio-section, .dicas {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    margin: 50px auto 0;
+    max-width: 1200px;
+    padding: 32px;
+}
+.respiracao h2, .audio-section h2, .dicas h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.respiracao-conteudo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.circulo-respiracao {
+    align-items: center;
+    background: #f5eff7;
+    border: 2px solid var(--roxo);
+    border-radius: 50%;
+    display: flex;
+    height: 340px;
+    justify-content: center;
+    position: relative;
+    width: 340px;
+}
+.circulo-interno {
+    align-items: center;
+    background: rgba(198, 159, 213, .55);
+    border-radius: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    transform: scale(.45);
+    width: 100%;
+}
+.circulo-interno.respirando {
+    animation: respiracao 8s ease-in-out infinite;
+}
+
+@keyframes respiracao {
+    0% {
+        transform: scale(.45);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.45);
+    }
+}
+#botao-respiracao {
+    background: var(--roxoescuro);
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    height: 120px;
+    padding: 15px;
+    position: absolute;
+    transition: background .2s ease, transform .2s ease;
+    width: 120px;
+    z-index: 2;
+}
+#botao-respiracao:hover {
+    background: #673052;
+    transform: scale(1.04);
+}
+#indicador-respiracao {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    pointer-events: none;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 3;
+}
+#indicador-respiracao:empty {
+    display: none;
+}
+.instrucao-respiracao {
+    color: var(--apagado);
+    font-size: 14px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.audio-section {
+    text-align: center;
+}
+.audio-section p {
+    color: var(--apagado);
+    font-size: 14px;
+    margin-top: 7px;
+}
+#audio-ambiente {
+    display: block;
+    margin: 25px auto 0;
+    max-width: 700px;
+    width: 100%;
+}
+
+.dicas {
+    margin-top: 50px;
+}
+.cards-dicas {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+.card-dica {
+    background: rgba(245, 239, 247, .65);
+    border: 1px solid var(--claro);
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.card-dica:hover {
+    border-color: var(--amarelo);
+    box-shadow: 0 5px 15px rgba(24, 14, 21, .08);
+    transform: translateY(-4px);
+}
+.icone-dica {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin: auto;
+    width: 70px;
+}
+.icone-dica img {
+    max-height: 65px;
+    max-width: 65px;
+}
+.card-dica h3 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-top: 12px;
+}
+.card-dica p {
+    color: var(--apagado);
+    font-size: 13px;
+    margin-top: 7px;
+    min-height: 40px;
+}
+.botao-conteudo {
+    background: var(--amarelo);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 11px 20px;
+    transition: background .2s ease, transform .2s ease;
+}
+.botao-conteudo:hover {
+    background: #ff9e1f;
+    transform: translateY(-2px);
+}
+
+.modal {
+    align-items: center;
+    background: rgba(24, 14, 21, .65);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: fixed;
+    transition: opacity .2s ease;
+    z-index: 1000;
+}
+.modal.aberto {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-conteudo {
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: min(750px, 90vh);
+    max-width: 900px;
+    overflow: hidden;
+    transform: translateY(15px);
+    transition: transform .2s ease;
+    width: 100%;
+}
+.modal.aberto .modal-conteudo {
+    transform: translateY(0);
+}
+.modal-cabecalho {
+    align-items: center;
+    border-bottom: 1px solid var(--claro);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 22px;
+}
+.modal-cabecalho h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+#fechar-modal {
+    background: transparent;
+    border: 0;
+    color: var(--roxoescuro);
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1;
+    padding: 2px 8px;
+}
+#fechar-modal:hover {
+    color: var(--amarelo);
+}
+#iframe-conteudo {
+    border: 0;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+.frase-final {
+    color: var(--roxoescuro);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-style: italic;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+footer {
+    background: var(--esc);
+    color: #dce9df;
+    font-size: 1.2em;
+    padding: 18px;
+    text-align: center;
+}
+footer a {
+    color: var(--amarelo);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+:is(#nav a, #botao-respiracao, .botao-conteudo, #fechar-modal):focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 850px) {
+    .cards-dicas {
+        grid-template-columns: 1fr;
+
+    }
+    .card-dica {
+        max-width: 500px;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+    #titulomenu {
+        max-width: 230px;
+    }
+    #nav {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    #nav a {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    main {
+        padding: 42px 12px 60px;
+    }
+    .titulo-principal {
+        font-size: 40px;
+    }
+    .subtitulo-principal {
+        font-size: 15px;
+    }
+    .respiracao, .audio-section, .dicas {
+        padding: 22px 14px;
+    }
+    .respiracao h2, .audio-section h2, .dicas h2 {
+        font-size: 26px;
+    }
+    .circulo-respiracao {
+        height: 280px;
+        width: 280px;
+    }
+    #botao-respiracao {
+        height: 105px;
+        width: 105px;
+    }
+    #indicador-respiracao {
+        font-size: 18px;
+    }
+    .modal {
+        padding: 10px;
+    }
+    .modal-conteudo {
+        height: 94vh;
+    }
+}

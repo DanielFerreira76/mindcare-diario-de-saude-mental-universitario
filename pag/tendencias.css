@@ -380,7 +380,7 @@ footer {
 }
 
 footer a {
-    color: #ffc578;
+    color: var(--amarelo);
     text-decoration: none;
 }
 
