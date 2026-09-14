@@ -1,42 +1,49 @@
 const botaoRespiracao = document.querySelector('#botao-respiracao')
 const circuloInterno = document.querySelector('#circulo-interno')
 const indicadorRespiracao = document.querySelector('#indicador-respiracao')
-
 let exercicioAtivo = false
+let ciclos = 0
 
 botaoRespiracao.addEventListener('click', () => {
-    exercicioAtivo = !exercicioAtivo
     if (exercicioAtivo) {
-        iniciarRespiracao()
-    } else {
-        pararRespiracao()
+        return
     }
+    iniciarRespiracao()
 })
 
 function iniciarRespiracao() {
-    circuloInterno.classList.add('respirando')
-    botaoRespiracao.textContent = 'Parar'
-    indicadorRespiracao.textContent = 'Inspire'
+    exercicioAtivo = true
+    ciclos = 0
+    botaoRespiracao.style.display = 'none'
+    executarCiclo()
 }
 
-function pararRespiracao() {
-    circuloInterno.classList.remove('respirando')
-    botaoRespiracao.textContent = 'Iniciar Exercício'
-    indicadorRespiracao.textContent = ''
-}
-
-circuloInterno.addEventListener('animationiteration', () => {
-        if (!exercicioAtivo) {
-            return
-        }
-        if (indicadorRespiracao.textContent === 'Inspire') {
-            indicadorRespiracao.textContent = 'Expire'
-        } else {
-            indicadorRespiracao.textContent = 'Inspire'
-        }
-
+function executarCiclo() {
+    if (ciclos >= 5) {
+        finalizarRespiracao()
+        return
     }
-)
+    indicadorRespiracao.textContent = 'Inspire'
+    circuloInterno.classList.remove('expirando')
+    circuloInterno.classList.add('inspirando')
+    setTimeout(() => {
+        indicadorRespiracao.textContent = 'Expire'
+        circuloInterno.classList.remove('inspirando')
+        circuloInterno.classList.add('expirando')
+        setTimeout(() => {
+            ciclos++
+            executarCiclo()
+        }, 5000)
+    }, 5000)
+}
+
+function finalizarRespiracao() {
+    exercicioAtivo = false
+    circuloInterno.classList.remove('inspirando')
+    circuloInterno.classList.remove('expirando')
+    indicadorRespiracao.textContent = ''
+    botaoRespiracao.style.display = 'block'
+}
 
 const modal = document.querySelector('#modal-conteudo')
 

@@ -25,10 +25,11 @@
         <section class="respiracao">
             <h2>Exercício de Respiração</h2>
             <div class="respiracao-conteudo">
-                <div id="circulo-respiracao" class="circulo-respiracao">
-                    <div id="circulo-interno" class="circulo-interno">
-                        <button id="botao-respiracao"type="button">Iniciar</button>
-                        <span id="indicador-respiracao" aria-live="polite"></span>
+                <div class="circulo-respiracao">
+                    <div class="circulo-interno" id="circulo-interno"></div>
+                    <div class="controle-respiracao">
+                        <button id="botao-respiracao">Iniciar Exercício</button>
+                        <span id="indicador-respiracao"></span>
                     </div>
                 </div>
             </div>
@@ -37,7 +38,7 @@
             </p>
         </section>
         <section class="audio-section">
-            <h2>Áudio Ambiente</h2>
+            <h2 class="titulo-audio"><img src="../img/audio.png" alt="Headphone" class="icone-audio">Áudio Ambiente</h2>
             <audio id="audio-ambiente" controls preload="metadata">
                 <source src="../audio/somambiente.mp3" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.

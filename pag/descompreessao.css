@@ -114,68 +114,75 @@ main {
     margin-top: 30px;
 }
 .circulo-respiracao {
-    align-items: center;
-    background: #f5eff7;
-    border: 2px solid var(--roxo);
-    border-radius: 50%;
-    display: flex;
-    height: 340px;
-    justify-content: center;
     position: relative;
     width: 340px;
-}
-.circulo-interno {
-    align-items: center;
-    background: rgba(198, 159, 213, .55);
+    height: 340px;
+    margin: 30px auto;
     border-radius: 50%;
+    background: #d6e0da;
     display: flex;
-    height: 100%;
+    align-items: center;
     justify-content: center;
-    position: relative;
-    transform: scale(.45);
-    width: 100%;
-}
-.circulo-interno.respirando {
-    animation: respiracao 8s ease-in-out infinite;
 }
 
-@keyframes respiracao {
-    0% {
+.circulo-interno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--roxo);
+    transform: scale(.45);
+}
+
+.circulo-interno.inspirando {
+    animation: inspirar 5s ease-in-out forwards;
+}
+
+.circulo-interno.expirando {
+    animation: expirar 5s ease-in-out forwards;
+}
+
+@keyframes inspirar {
+    from {
         transform: scale(.45);
-    }
-    50% {
+    } to {
         transform: scale(1);
     }
-    100% {
+}
+
+@keyframes expirar {
+    from {
+        transform: scale(1);
+    } to {
         transform: scale(.45);
     }
 }
 #botao-respiracao {
-    background: var(--roxoescuro);
-    border: 0;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: none;
     border-radius: 50%;
+    background: var(--roxoescuro);
     color: white;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 700;
-    height: 120px;
-    padding: 15px;
-    position: absolute;
-    transition: background .2s ease, transform .2s ease;
-    width: 120px;
-    z-index: 2;
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 #botao-respiracao:hover {
     background: #673052;
     transform: scale(1.04);
 }
 #indicador-respiracao {
+    position: relative;
+    display: block;
+    margin-top: 12px;
     color: white;
     font-size: 22px;
     font-weight: 700;
-    pointer-events: none;
-    position: absolute;
     text-transform: uppercase;
+    pointer-events: none;
     z-index: 3;
 }
 #indicador-respiracao:empty {
@@ -186,6 +193,17 @@ main {
     font-size: 14px;
     margin-top: 25px;
     text-align: center;
+}
+.controle-respiracao {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .audio-section {
@@ -202,7 +220,18 @@ main {
     max-width: 700px;
     width: 100%;
 }
+.titulo-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+.icone-audio {
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+}
 .dicas {
     margin-top: 50px;
 }
@@ -409,11 +438,13 @@ footer a:hover {
         width: 280px;
     }
     #botao-respiracao {
-        height: 105px;
-        width: 105px;
+    width: 105px;
+    height: 105px;
+    font-size: 16px;
     }
     #indicador-respiracao {
         font-size: 18px;
+        margin-top: 10px;
     }
     .modal {
         padding: 10px;
