@@ -25,9 +25,11 @@ A aplicação possui como funcionalidade principal o **check-in emocional diári
 
 O projeto também contempla uma área de **Tendências e Autoconhecimento**, destinada à visualização do histórico de humor e à identificação de padrões ao longo dos dias e semanas.
 
-O sistema também possui uma área de **Descompressão e Exercícios**, que disponibiliza um exercício visual de respiração, áudio ambiente e conteúdos relacionados à organização dos estudos, sono e gestão do tempo. A área de Agendamento de Apoio Psicopedagógico permanece em desenvolvimento.
+O sistema possui ainda uma área de **Descompressão e Exercícios**, que disponibiliza um exercício visual de respiração, áudio ambiente e conteúdos relacionados à organização dos estudos, sono e gestão do tempo.
 
-Como parte da proposta do sistema, está previstas ainda a área de **Agendamento de Apoio Psicopedagógico**, que será desenvolvida nas próximas etapas do projeto.
+A área de **Agendamento de Apoio Psicopedagógico** permite simular a consulta de profissionais disponíveis, seleção de data e horário, confirmação do agendamento e opções de cancelamento e remarcação.
+
+Como parte da proposta do sistema, o frontend utiliza dados simulados em arquivos JSON e armazenamento local. A integração com Backend e banco de dados será realizada nas próximas etapas do projeto.
 
 > **Observação:** o MindCare é um projeto acadêmico e não tem como objetivo realizar diagnósticos ou substituir acompanhamento profissional especializado.
 
@@ -48,6 +50,8 @@ Desenvolver uma aplicação web que auxilie estudantes universitários no acompa
 * Disponibilizar exercícios de descompressão e respiração.
 * Oferecer conteúdos relacionados à organização dos estudos, sono, gestão do tempo e bem-estar.
 * Facilitar o acesso ao apoio psicopedagógico disponibilizado pela instituição.
+* Permitir a seleção de profissionais, datas e horários para simulação de agendamento.
+* Disponibilizar opções de confirmação, cancelamento e remarcação de agendamento.
 * Desenvolver uma interface simples, acolhedora, responsiva e acessível.
 * Aplicar conhecimentos de desenvolvimento Frontend, Backend, banco de dados e integração de sistemas.
 
@@ -145,15 +149,33 @@ Os conteúdos são apresentados de forma simples e informativa, sem finalidade d
 
 ### 6.4 Agendamento de Apoio Psicopedagógico
 
-Funcionalidade prevista para permitir:
+A área de Agendamento de Apoio Psicopedagógico permite simular o processo de solicitação de uma conversa ou acolhimento com profissionais disponíveis.
 
-* Visualização dos profissionais disponíveis;
-* Consulta de horários;
-* Seleção de data e horário;
-* Confirmação de agendamento;
-* Cancelamento ou reagendamento.
+Atualmente, a funcionalidade possui:
 
-**Status:** em desenvolvimento.
+* Listagem dos profissionais disponíveis;
+* Exibição da função de cada profissional;
+* Exibição da especialidade de cada profissional;
+* Seleção de um profissional;
+* Seleção de uma data;
+* Exibição dos horários disponíveis;
+* Seleção de horário;
+* Resumo da seleção realizada;
+* Confirmação visual do agendamento;
+* Exibição do nome do estudante;
+* Exibição do profissional selecionado;
+* Exibição da data e horário escolhidos;
+* Opção de remarcação;
+* Opção de cancelamento;
+* Opção de iniciar um novo agendamento.
+
+Os profissionais e horários utilizados atualmente são **dados simulados**, armazenados em `professionals.json`.
+
+Os dados do usuário utilizados na confirmação são obtidos de `users.json`.
+
+A funcionalidade atual realiza a simulação do fluxo no frontend. O agendamento ainda não é persistido em um banco de dados ou enviado para uma API.
+
+**Status:** concluído no frontend.
 
 ---
 
@@ -193,6 +215,10 @@ Interface Web
 JavaScript
    ├── localStorage
    └── Arquivos JSON simulados
+        ├── users.json
+        ├── mood_logs.json
+        ├── professionals.json
+        └── resources.json
 ```
 
 O `localStorage` é utilizado para armazenar temporariamente os registros realizados pelo usuário no navegador.
@@ -275,11 +301,29 @@ Os registros possuem informações como:
 
 ### `professionals.json`
 
-Será utilizado para armazenar dados simulados dos profissionais disponíveis para atendimento, como nome, especialidade, horários e disponibilidade.
+Contém dados simulados dos profissionais utilizados na área de Agendamento de Apoio Psicopedagógico.
+
+Entre as informações estão:
+
+* Identificador;
+* Nome;
+* Função;
+* Especialidade;
+* Horários disponíveis.
+
+Os profissionais presentes no arquivo são fictícios e utilizados exclusivamente para simulação durante o desenvolvimento acadêmico.
 
 ### `resources.json`
 
-Será utilizado para armazenar conteúdos simulados relacionados a exercícios, respiração, organização dos estudos, sono, gestão do tempo e bem-estar.
+Contém o catálogo dos recursos educativos utilizados na área de Descompressão e Exercícios.
+
+Entre os recursos estão:
+
+* Conteúdos sobre estudos;
+* Conteúdos sobre sono;
+* Conteúdos sobre gestão do tempo;
+* Identificação dos arquivos utilizados para exibição dos conteúdos;
+* Informações relacionadas ao áudio ambiente.
 
 ---
 
@@ -357,6 +401,8 @@ Após abrir o projeto no Visual Studio Code:
 5. Acesse a página de Check-in Diário.
 6. Realize um check-in para testar o armazenamento local.
 7. Acesse a área de Tendências e Autoconhecimento para visualizar os registros disponíveis.
+8. Acesse a área de Descompressão e Exercícios para testar o exercício de respiração e os conteúdos educativos.
+9. Acesse a área de Agendamento de Apoio Psicopedagógico para testar a seleção de profissionais, datas, horários, confirmação, remarcação e cancelamento.
 
 ---
 
@@ -370,7 +416,8 @@ MindCare/
 ├── data/
 │   ├── mood_logs.json
 │   ├── users.json
-│   └── wellbeing-content.json
+│   ├── professionals.json
+│   └── resources.json
 │
 ├── audio/
 │   └── somambiente.mp3
@@ -398,6 +445,9 @@ MindCare/
 │   │   ├── sono.html
 │   │   └── gestao-tempo.html
 │   │
+│   ├── agendamento.html
+│   ├── agendamento.css
+│   ├── agendamento.js
 │   ├── descompressao.html
 │   ├── descompressao.css
 │   ├── descompressao.js
@@ -411,8 +461,6 @@ MindCare/
 ├── favicon.ico
 └── README.md
 ```
-
-> Arquivos como `professionals.json` e `resources.json`, além das páginas de Descompressão e Agendamento, serão incorporados conforme o desenvolvimento dessas funcionalidades.
 
 ---
 
@@ -434,9 +482,25 @@ A página apresenta um calendário mensal, uma análise dos humores mais frequen
 
 ---
 
-### Exemplo 3 — Apoio Psicopedagógico
+### Exemplo 3 — Descompressão e Exercícios
 
-Nas próximas etapas do projeto, o estudante poderá acessar a área de apoio psicopedagógico, consultar profissionais e horários disponíveis e realizar um agendamento.
+O estudante acessa a área de Descompressão e Exercícios e pode iniciar o exercício visual de respiração.
+
+Durante o exercício, o círculo realiza movimentos de expansão e redução, acompanhados pelas indicações de inspiração e expiração. Também é possível reproduzir o áudio ambiente e acessar conteúdos educativos sobre estudos, sono e gestão do tempo.
+
+---
+
+### Exemplo 4 — Agendamento de Apoio Psicopedagógico
+
+O estudante acessa a área de Agendamento de Apoio Psicopedagógico e visualiza os profissionais disponíveis.
+
+Após selecionar um profissional, o sistema libera a seleção de data e apresenta os horários disponíveis para aquele profissional.
+
+Depois de selecionar o horário, o estudante visualiza um resumo da escolha e pode confirmar o agendamento.
+
+Após a confirmação, o sistema apresenta um card de lembrete contendo as informações do estudante, profissional, data e horário selecionados.
+
+A interface também disponibiliza opções de **remarcação** e **cancelamento** do agendamento.
 
 ---
 
@@ -458,25 +522,26 @@ As capturas de tela serão adicionadas conforme as funcionalidades forem conclu�
 ![Página de Descompressão e Exercícios](prints/print4.png)
 ![Página de Descompressão e Exercícios](prints/print5.png)
 
-### Agendamento
+### Agendamento de Apoio Psicopedagógico
 
-> **[Inserir captura de tela quando a funcionalidade estiver concluída]**
+![Página de Agendamento](prints/print6.png)
+![Página de Agendamento](prints/print7.png)
 
 ---
 
 ## 19. Equipe do Projeto
 
-| Integrante                      | Função principal                                               |
-| ------------------------------- | -------------------------------------------------------------- |
+| Integrante                      | Função principal                                                        |
+| ------------------------------- | ----------------------------------------------------------------------- |
 | **Daniel Ferreira Vieira**      | Liderança, Desenvolvimento Frontend e Arquitetura/orientação do projeto |
-| **Cleber Júnio da Silva Souza** | Documentação do Frontend |
-| **Gabriel Barbosa Luiz**        | Desenvolvimento Backend |
-| **Júnio Gomes Pereira**         | QA e testes de responsividade |
-| **Arthur Rocha Araújo**         | UI,UX e testes de compatibilidade |
-| **João Pedro Alves Soares**     | Desenvolvimento Backend |
-| **Daniel Costa Alves da Silva** | Desenvolvimento Backend |
-| **Ítalo Rodrigues dos Santos**  | Documentação do Backend |
-| **Davi Martins Fagundes**       | Desenvolvimento Backend |
+| **Cleber Júnio da Silva Souza** | Documentação do Frontend                                                |
+| **Gabriel Barbosa Luiz**        | Desenvolvimento Backend                                                 |
+| **Júnio Gomes Pereira**         | QA e testes de responsividade                                           |
+| **Arthur Rocha Araújo**         | UI, UX e testes de compatibilidade                                      |
+| **João Pedro Alves Soares**     | Desenvolvimento Backend                                                 |
+| **Daniel Costa Alves da Silva** | Desenvolvimento Backend                                                 |
+| **Ítalo Rodrigues dos Santos**  | Documentação do Backend                                                 |
+| **Davi Martins Fagundes**       | Desenvolvimento Backend                                                 |
 
 **Orientador:** Prof. Hudson Neves
 
@@ -555,11 +620,13 @@ Entre as melhorias previstas para as próximas etapas estão:
 * Sistema de login e autenticação;
 * Associação dos registros aos usuários autenticados;
 * Persistência dos dados no servidor;
-* Implementação completa do Dashboard;
-* Implementação dos exercícios de descompressão;
-* Implementação do sistema de agendamento;
-* Integração com calendário;
+* Integração do check-in com a API;
+* Integração das tendências com dados persistidos no banco;
+* Persistência dos agendamentos;
+* Verificação de disponibilidade dos profissionais em tempo real;
+* Integração do agendamento com calendário;
 * Sistema de notificações;
+* Envio de lembretes de agendamento;
 * Melhorias de segurança e proteção dos dados;
 * Deploy completo da aplicação em ambiente de nuvem.
 
@@ -591,7 +658,7 @@ Na implementação do Backend, deverão ser consideradas medidas adicionais de s
 
 **Versão atual:** 0.1.0 — Frontend
 
-### Funcionalidades em desenvolvimento
+### Funcionalidades
 
 * [x] Estrutura inicial do projeto
 * [x] Identidade visual
@@ -612,11 +679,23 @@ Na implementação do Backend, deverão ser consideradas medidas adicionais de s
 * [x] Áudio ambiente
 * [x] Conteúdos educativos sobre estudos, sono e gestão do tempo
 * [x] Modal para exibição dos conteúdos
-* [ ] Página de Agendamento
+* [x] Página de Agendamento de Apoio Psicopedagógico
+* [x] Carregamento de profissionais via `professionals.json`
+* [x] Seleção de profissional
+* [x] Seleção de data
+* [x] Exibição de horários disponíveis
+* [x] Seleção de horário
+* [x] Resumo do agendamento
+* [x] Confirmação visual do agendamento
+* [x] Exibição dos dados do usuário via `users.json`
+* [x] Remarcação de agendamento
+* [x] Cancelamento de agendamento
 * [ ] Backend
 * [ ] Banco de Dados
 * [ ] Sistema de autenticação
 * [ ] Integração Fullstack
+* [ ] Persistência dos agendamentos
+* [ ] Integração com calendário
 * [ ] Deploy da aplicação
 * [ ] Testes finais
 
@@ -643,6 +722,8 @@ O código-fonte do projeto está disponível no GitHub:
 O MindCare encontra-se em desenvolvimento e sua arquitetura será evoluída gradualmente durante as etapas do projeto.
 
 A versão atual possui foco no desenvolvimento e validação do **Frontend**, utilizando dados simulados em arquivos JSON e armazenamento local para algumas funcionalidades.
+
+Atualmente, as principais funcionalidades previstas para o frontend — **Check-in Diário, Tendências e Autoconhecimento, Descompressão e Exercícios e Agendamento de Apoio Psicopedagógico** — encontram-se implementadas.
 
 Nas próximas etapas, o projeto será integrado a um Backend, permitindo a persistência centralizada dos dados, autenticação de usuários e implementação das demais funcionalidades previstas na proposta.
 
