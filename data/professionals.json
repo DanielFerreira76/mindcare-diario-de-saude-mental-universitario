@@ -1,0 +1,40 @@
+{
+    "profissionais": [
+        {
+            "id": 1,
+            "nome": "Ana Carolina Mendes",
+            "funcao": "Psicóloga",
+            "especialidade": "Apoio psicológico universitário",
+            "horarios": [
+                "09:00",
+                "10:00",
+                "14:00",
+                "15:00"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Alves Rocha",
+            "funcao": "Psicopedagoga",
+            "especialidade": "Organização dos estudos e aprendizagem",
+            "horarios": [
+                "08:00",
+                "11:00",
+                "14:00",
+                "16:00"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Henrique Souza",
+            "funcao": "Estagiário de Psicologia",
+            "especialidade": "Acolhimento e escuta universitária",
+            "horarios": [
+                "10:00",
+                "13:00",
+                "15:00",
+                "17:00"
+            ]
+        }
+    ]
+}

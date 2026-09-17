@@ -1,0 +1,550 @@
+@charset "UTF-8";
+
+:root {
+    --esc: #180e15;
+    --apagado: #76666e;
+    --papel: #f5eff7;
+    --roxo: #C69FD5;
+    --roxoescuro: #542344;
+    --amarelo: #FF9000;
+    --claro: #d6e0da;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--papel);
+    color: var(--esc);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    line-height: 1.5;
+}
+
+button, input {
+    font: inherit;
+}
+
+header {
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid var(--claro);
+    display: flex;
+    gap: 16px;
+    padding: 18px clamp(20px, 6vw, 90px);
+}
+
+header > img {
+    height: 54px;
+    width: 54px;
+}
+
+#titulomenu {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 2.2vw, 29px);
+    font-weight: 600;
+    line-height: 1.1;
+    max-width: 700px;
+}
+
+#nav {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+#nav a {
+    background: transparent;
+    border-radius: 8px;
+    color: var(--apagado);
+    font-size: 14px;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+#nav a:hover {
+    background: var(--roxo);
+    color: var(--roxoescuro);
+}
+
+main {
+    background: linear-gradient(135deg, var(--papel) 42%, #f2e5df, 100%);
+    min-height: calc(100vh - 150px);
+    padding: clamp(42px, 7vw, 88px) 20px 80px;
+}
+
+.titulo-principal {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.08;
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.subtitulo-principal {
+    color: var(--apagado);
+    font-size: 17px;
+    margin: 12px auto 0;
+    max-width: 700px;
+    text-align: center;
+}
+
+.secao-agendamento {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    margin: 50px auto 0;
+    max-width: 1200px;
+    padding: 32px;
+}
+
+.secao-agendamento h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.descricao-secao {
+    color: var(--apagado);
+    font-size: 14px;
+    margin: 8px auto 0;
+    max-width: 650px;
+    text-align: center;
+}
+
+.lista-profissionais {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+
+.card-profissional {
+    background: rgba(245, 239, 247, .65);
+    border: 1px solid var(--claro);
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.card-profissional:hover {
+    border-color: var(--amarelo);
+    box-shadow: 0 5px 15px rgba(24, 14, 21, .08);
+    transform: translateY(-4px);
+}
+
+.card-profissional.selecionado {
+    border: 2px solid var(--roxoescuro);
+    box-shadow: 0 5px 18px rgba(84, 35, 68, .15);
+}
+
+.icone-profissional {
+    align-items: center;
+    background: var(--roxo);
+    border-radius: 50%;
+    color: var(--roxoescuro);
+    display: flex;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    height: 65px;
+    justify-content: center;
+    margin: 0 auto 15px;
+    width: 65px;
+}
+
+.card-profissional h3 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.funcao-profissional {
+    color: var(--roxoescuro);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.especialidade-profissional {
+    color: var(--apagado);
+    font-size: 13px;
+    margin-top: 8px;
+    min-height: 40px;
+}
+
+.botao-selecionar {
+    background: var(--amarelo);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 11px 20px;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.botao-selecionar:hover {
+    background: #ff9e1f;
+    transform: translateY(-2px);
+}
+
+.card-profissional.selecionado .botao-selecionar {
+    background: var(--roxoescuro);
+}
+
+.secao-desativada {
+    opacity: .55;
+    pointer-events: none;
+}
+
+.selecao-data {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0;
+    max-width: 400px;
+}
+
+.selecao-data label {
+    color: var(--esc);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#data-agendamento {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 8px;
+    color: var(--esc);
+    cursor: pointer;
+    padding: 12px;
+}
+
+#data-agendamento:focus {
+    border-color: var(--roxoescuro);
+    outline: 2px solid var(--roxo);
+}
+
+.area-horarios {
+    margin: 30px auto 0;
+    max-width: 700px;
+}
+
+.mensagem-ajuda, .mensagem-carregamento {
+    color: var(--apagado);
+    font-size: 14px;
+    text-align: center;
+}
+
+.lista-horarios {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botao-horario {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 8px;
+    color: var(--roxoescuro);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.botao-horario:hover {
+    background: var(--roxo);
+    border-color: var(--roxoescuro);
+    transform: translateY(-2px);
+}
+
+.botao-horario.selecionado {
+    background: var(--roxoescuro);
+    border-color: var(--roxoescuro);
+    color: white;
+}
+
+.resumo-selecao {
+    border-top: 1px solid var(--claro);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 35px auto 0;
+    max-width: 800px;
+    padding-top: 25px;
+}
+
+.resumo-selecao div {
+    text-align: center;
+}
+
+.resumo-selecao span, .informacao-lembrete span {
+    color: var(--apagado);
+    display: block;
+    font-size: 12px;
+}
+
+.resumo-selecao strong {
+    color: var(--esc);
+    display: block;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.botao-principal {
+    background: var(--roxoescuro);
+    border: 0;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30px auto 0;
+    padding: 13px 25px;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.botao-principal:hover:not(:disabled) {
+    background: #673052;
+    transform: translateY(-2px);
+}
+
+.botao-principal:disabled {
+    cursor: not-allowed;
+    opacity: .45;
+}
+
+.secao-confirmacao {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    margin: 50px auto 0;
+    max-width: 800px;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.icone-confirmacao {
+    align-items: center;
+    background: var(--claro);
+    border-radius: 50%;
+    color: var(--roxoescuro);
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    height: 65px;
+    justify-content: center;
+    margin: auto;
+    width: 65px;
+}
+
+.secao-confirmacao h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 18px;
+}
+
+.texto-confirmacao {
+    color: var(--apagado);
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.card-lembrete {
+    background: rgba(245, 239, 247, .65);
+    border: 1px solid var(--claro);
+    border-radius: 14px;
+    margin-top: 28px;
+    padding: 25px;
+    text-align: left;
+}
+
+.card-lembrete h3 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.informacao-lembrete {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 22px;
+}
+
+.informacao-lembrete strong {
+    color: var(--esc);
+    display: block;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.acoes-agendamento {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.botao-secundario, .botao-cancelar {
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 11px 20px;
+}
+
+.botao-secundario {
+    background: var(--amarelo);
+    color: white;
+}
+
+.botao-cancelar {
+    background: #eee5e9;
+    color: var(--roxoescuro);
+}
+
+.botao-secundario:hover, .botao-cancelar:hover {
+    transform: translateY(-2px);
+}
+
+.mensagem-final {
+    background: white;
+    border: 1px solid var(--claro);
+    border-radius: 16px;
+    margin: 50px auto 0;
+    max-width: 800px;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.mensagem-final h2 {
+    color: var(--esc);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.mensagem-final p {
+    color: var(--apagado);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.frase-final {
+    color: var(--roxoescuro);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-style: italic;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+footer {
+    background: var(--esc);
+    color: #dce9df;
+    font-size: 1.2em;
+    padding: 18px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--amarelo);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+:is(#nav a, button, #data-agendamento):focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
+
+@media screen and (max-width: 850px) {
+    .lista-profissionais {
+        grid-template-columns: 1fr;
+    }
+    .card-profissional {
+        margin: auto;
+        max-width: 500px;
+        width: 100%;
+    }
+    .lista-horarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+    #titulomenu {
+        max-width: 230px;
+    }
+    #nav {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    #nav a {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    main {
+        padding: 42px 12px 60px;
+    }
+    .titulo-principal {
+        font-size: 40px;
+    }
+    .subtitulo-principal {
+        font-size: 15px;
+    }
+    .secao-agendamento, .secao-confirmacao, .mensagem-final {
+        padding: 22px 14px;
+    }
+    .secao-agendamento h2 {
+        font-size: 26px;
+    }
+    .lista-horarios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .resumo-selecao {
+        grid-template-columns: 1fr;
+    }
+    .informacao-lembrete {
+        grid-template-columns: 1fr;
+    }
+    .acoes-agendamento {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .botao-secundario, .botao-cancelar {
+        width: 100%;
+    }
+}
