@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +14,7 @@
         <h1 id="titulomenu">Diário de Saúde Mental e Apoio Universitário</h1>
         <section id="nav">
             <a href="../index.html">Check-in Diário</a>
-            <a href="pag/tendencias.html">Tendências e Autoconhecimento</a>
+            <a href="tendencias.html">Tendências e Autoconhecimento</a>
             <a href="#">Agendamento de Apoio Psicopedagógico</a>
         </section>
     </header>
@@ -26,7 +27,10 @@
             <h2>Exercício de Respiração</h2>
             <div class="respiracao-conteudo">
                 <div class="circulo-respiracao">
-                    <div class="circulo-interno" id="circulo-interno"></div>
+                    <div
+                        class="circulo-interno"
+                        id="circulo-interno">
+                    </div>
                     <div class="controle-respiracao">
                         <button id="botao-respiracao">Iniciar Exercício</button>
                         <span id="indicador-respiracao"></span>
@@ -39,7 +43,7 @@
         </section>
         <section class="audio-section">
             <h2 class="titulo-audio"><img src="../img/audio.png" alt="Headphone" class="icone-audio">Áudio Ambiente</h2>
-            <audio id="audio-ambiente" controls preload="metadata">
+            <audio id="audio-ambiente" controls  preload="metadata">
                 <source src="../audio/somambiente.mp3" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.
             </audio>
@@ -55,7 +59,7 @@
                     <p>
                         Dicas para a sua rotina acadêmica
                     </p>
-                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/estudos.html" data-titulo="Dicas para a rotina acadêmica">Ler conteúdo</button>
+                    <button type="button" class="botao-conteudo" data-conteudo-id="estudos">Ler conteúdo</button>
                 </article>
                 <article class="card-dica">
                     <div class="icone-dica">
@@ -65,7 +69,7 @@
                     <p>
                         Dicas para a sua rotina de descanso
                     </p>
-                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/sono.html" data-titulo="Cuidados com o sono">Ler conteúdo</button>
+                    <button type="button" class="botao-conteudo" data-conteudo-id="sono">Ler conteúdo</button>
                 </article>
                 <article class="card-dica">
                     <div class="icone-dica">
@@ -75,14 +79,16 @@
                     <p>
                         Dicas para organizar a sua rotina
                     </p>
-                    <button type="button" class="botao-conteudo" data-conteudo="conteudos/gestao-tempo.html" data-titulo="Gestão do tempo">Ler conteúdo</button>
+                    <button type="button" class="botao-conteudo" data-conteudo-id="gestao-tempo">Ler conteúdo</button>
                 </article>
             </div>
         </section>
         <div id="modal-conteudo" class="modal" aria-hidden="true">
+
             <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
                 <div class="modal-cabecalho">
                     <h2 id="titulo-modal">Conteúdo</h2>
+
                     <button id="fechar-modal" type="button" aria-label="Fechar conteúdo">&times;</button>
                 </div>
                 <iframe id="iframe-conteudo" src="" title="Conteúdo educativo"></iframe>
@@ -93,7 +99,7 @@
         </p>
     </main>
     <footer>
-        Projeto criado por <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a> e  <a href="#" class="github">link</a> sob orientação de  <a href="#" class="github">Hudson Neves</a>
+        Projeto criado por <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a> e <a href="#" class="github">link</a> sob orientação de <a href="#" class="github">Hudson Neves</a>
     </footer>
     <script src="descompressao.js"></script>
 </body>

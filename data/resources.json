@@ -1,0 +1,26 @@
+{
+    "conteudos": [
+        {
+            "id": "estudos",
+            "titulo": "Dicas para a rotina acadêmica",
+            "arquivo": "conteudos/estudos.html"
+        },
+        {
+            "id": "sono",
+            "titulo": "Cuidados com o sono",
+            "arquivo": "conteudos/sono.html"
+        },
+        {
+            "id": "gestao-tempo",
+            "titulo": "Gestão do tempo",
+            "arquivo": "conteudos/gestao-tempo.html"
+        }
+    ],
+    "audios": [
+        {
+            "id": "ambiente",
+            "titulo": "Áudio Ambiente",
+            "arquivo": "../audio/somambiente.mp3"
+        }
+    ]
+}
