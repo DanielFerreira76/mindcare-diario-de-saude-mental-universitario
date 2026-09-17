@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare | Agendamento de Apoio Psicopedagógico</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logotipo.png" alt="Logo">
+        <h1 id="titulomenu">Diário de Saúde Mental e Apoio Universitário</h1>
+        <section id="nav">
+            <a href="../index.html">Check-in Diário</a>
+            <a href="tendencias.html">Tendências e Autoconhecimento</a>
+            <a href="descompressao.html">Descompressão e Exercícios</a>
+        </section>
+    </header>
+    <main>
+        <h1 class="titulo-principal">Agendamento de Apoio Psicopedagógico</h1> <p class="subtitulo-principal">
+            Escolha um profissional e um horário para realizar uma conversa de acolhimento.
+        </p>
+        <section class="secao-agendamento">
+            <h2>Profissionais disponíveis</h2>
+            <p class="descricao-secao">
+                Selecione o profissional com quem você deseja realizar o acolhimento.
+            </p>
+            <div id="lista-profissionais" class="lista-profissionais">
+                <p class="mensagem-carregamento">
+                    Carregando profissionais...
+                </p>
+            </div>
+        </section>
+        <section id="secao-horarios" class="secao-agendamento secao-desativada">
+            <h2>Escolha uma data e horário</h2>
+            <p class="descricao-secao">
+                Selecione uma data disponível e depois escolha um dos horários oferecidos.
+            </p>
+            <div class="selecao-data">
+                <label for="data-agendamento">Data do acolhimento</label>
+                <input type="date" id="data-agendamento">
+            </div>
+            <div id="area-horarios" class="area-horarios">
+                <p class="mensagem-ajuda">
+                    Selecione uma data para visualizar os horários disponíveis.
+                </p>
+            </div>
+            <div class="resumo-selecao">
+                <div>
+                    <span>Profissional</span>
+                    <strong id="resumo-profissional"> — </strong>
+                </div>
+                <div>
+                    <span>Data</span>
+                    <strong id="resumo-data"> — </strong>
+                </div>
+                <div>
+                    <span>Horário</span>
+                    <strong id="resumo-horario"> — </strong>
+                </div>
+            </div>
+            <button id="botao-confirmar" class="botao-principal" type="button" disabled>Confirmar acolhimento</button>
+        </section>
+        <section id="secao-confirmacao" class="secao-confirmacao" hidden>
+            <div class="icone-confirmacao">✓</div>
+            <h2>Acolhimento agendado</h2>
+            <p class="texto-confirmacao">
+                Seu horário foi reservado neste protótipo do MindCare.
+            </p>
+            <div class="card-lembrete">
+                <h3>Lembrete do atendimento</h3>
+                <div class="informacao-lembrete">
+                    <div>
+                        <span>Estudante</span>
+                        <strong id="lembrete-usuario"> — </strong>
+                    </div>
+                    <div>
+                        <span>Profissional</span>
+                        <strong id="lembrete-profissional"> — </strong>
+                    </div>
+                    <div>
+                        <span>Data</span>
+                        <strong id="lembrete-data"> — </strong>
+                    </div>
+                    <div>
+                        <span>Horário</span>
+                        <strong id="lembrete-horario"> — </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-agendamento">
+                <button id="botao-remarcar" class="botao-secundario" type="button">Remarcar</button>
+                <button id="botao-cancelar" class="botao-cancelar" type="button">Cancelar agendamento</button>
+            </div>
+        </section>
+        <section id="secao-cancelamento" class="mensagem-final" hidden>
+            <h2>Agendamento cancelado</h2>
+            <p>
+                O horário foi liberado. Caso necessário, você pode realizar um novo agendamento.
+            </p>
+            <button id="botao-novo-agendamento" class="botao-principal" type="button">Novo agendamento</button>
+        </section>
+        <p class="frase-final">
+            Cuidar da sua rotina também é reservar um tempo para você.
+        </p>
+    </main>
+    <footer>
+        Projeto criado por <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a>, <a href="#" class="github">link</a> e <a href="#" class="github">link</a> sob orientação de <a href="#" class="github">Hudson Neves</a>
+    </footer>
+    <script src="agendamento.js"></script>
+</body>
+</html>
