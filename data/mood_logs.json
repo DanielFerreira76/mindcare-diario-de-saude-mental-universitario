@@ -62,5 +62,133 @@
         "detalhes": null,
         "data": "2026-09-08",
         "horario": "16:46"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Cansado",
+        "influencias": ["Estudos", "Trabalho"],
+        "detalhes": "Dia cheio de atividades.",
+        "data": "2026-09-09",
+        "horario": "21:15"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Lazer", "Relações"],
+        "detalhes": "Consegui passar um tempo com amigos.",
+        "data": "2026-09-10",
+        "horario": "19:25"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Ansioso",
+        "influencias": ["Provas", "Estudos"],
+        "detalhes": "Preocupado com as avaliações.",
+        "data": "2026-09-11",
+        "horario": "17:40"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Família", "Lazer"],
+        "detalhes": "Consegui relaxar em casa.",
+        "data": "2026-09-12",
+        "horario": "20:05"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Energizado",
+        "influencias": ["Alimentação", "Lazer"],
+        "detalhes": "Acordei com bastante disposição.",
+        "data": "2026-09-13",
+        "horario": "09:30"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Pressionado",
+        "influencias": ["Projetos", "Estudos"],
+        "detalhes": "Muitas tarefas para organizar.",
+        "data": "2026-09-14",
+        "horario": "18:10"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Estudos"],
+        "detalhes": "Consegui avançar nas atividades.",
+        "data": "2026-09-15",
+        "horario": "19:00"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Cansado",
+        "influencias": ["Trabalho", "Sono"],
+        "detalhes": "Senti falta de descansar melhor.",
+        "data": "2026-09-16",
+        "horario": "21:20"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Ansioso",
+        "influencias": ["Provas", "Projetos"],
+        "detalhes": "Preocupação com os prazos.",
+        "data": "2026-09-17",
+        "horario": "16:50"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Lazer"],
+        "detalhes": "Tirei um tempo para mim.",
+        "data": "2026-09-18",
+        "horario": "20:30"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Família", "Alimentação"],
+        "detalhes": "",
+        "data": "2026-09-19",
+        "horario": "13:15"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Triste",
+        "influencias": ["Relações", "Família"],
+        "detalhes": "Dia um pouco difícil emocionalmente.",
+        "data": "2026-09-20",
+        "horario": "19:45"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Energizado",
+        "influencias": ["Estudos", "Lazer"],
+        "detalhes": "Comecei a semana motivado.",
+        "data": "2026-09-21",
+        "horario": "08:50"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Pressionado",
+        "influencias": ["Projetos", "Provas"],
+        "detalhes": "Preciso conciliar várias responsabilidades.",
+        "data": "2026-09-22",
+        "horario": "18:35"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Estudos", "Relações"],
+        "detalhes": "Consegui concluir algumas tarefas.",
+        "data": "2026-09-23",
+        "horario": "19:20"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Família", "Lazer"],
+        "detalhes": "Dia tranquilo, consegui descansar.",
+        "data": "2026-09-24",
+        "horario": "20:15"
     }
 ]
