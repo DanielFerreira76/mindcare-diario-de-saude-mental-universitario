@@ -113,27 +113,11 @@
     },
     {
         "usuarioId": 1,
-        "humor": "Bem",
-        "influencias": ["Estudos"],
-        "detalhes": "Consegui avançar nas atividades.",
-        "data": "2026-09-15",
-        "horario": "19:00"
-    },
-    {
-        "usuarioId": 1,
         "humor": "Cansado",
         "influencias": ["Trabalho", "Sono"],
         "detalhes": "Senti falta de descansar melhor.",
         "data": "2026-09-16",
         "horario": "21:20"
-    },
-    {
-        "usuarioId": 1,
-        "humor": "Ansioso",
-        "influencias": ["Provas", "Projetos"],
-        "detalhes": "Preocupação com os prazos.",
-        "data": "2026-09-17",
-        "horario": "16:50"
     },
     {
         "usuarioId": 1,
