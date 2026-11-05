@@ -41,8 +41,8 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    background: var(--roxo);
-    border: 1px solid var(--apagado);
+    background-image: linear-gradient(160deg, #ffc67b, var(--roxo));
+    border: 1px solid var(--esc);
     border-radius: 10px;
 }
 #ilustracao {
@@ -58,13 +58,13 @@ section {
     padding: 10px;
 }
 .titulo {
-    color: var(--esc);
+    color: var(--roxoescuro);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 900;
     padding-bottom: 5px;
 }
 .texto {
-    color: var(--roxoescuro);
+    color: var(--fundoroxo);
     font-size: 20px;
 }
 
@@ -74,6 +74,7 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     padding: 10px 0px;
+    text-align: center;
 }
 main > p {
     color: var(--roxoescuro);
