@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    header {
+        border: 2px solid var(--claro);
+    }
+    #logoinicial {
+        height: 90px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+            padding: 15px;
+    }
+    section {
+        border: 2px solid var(--apagado);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+    #ilustracao {
+        display: block;
+        width: 50%;
+        padding: 15px;
+    }
+    #secaoinicial {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .texto {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 15px 0px;
+    }
+    main > p {
+        font-size: 25px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 350px);
+        justify-content: center;
+    }
+    .card {
+        width: 350px;
+        border: 2px solid var(--claro);
+        border-radius: 20px;
+        font-size: 15px;
+        height: 270px;
+        transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+    }
+    .card:hover {
+        box-shadow: 0 10px 25px rgba(24, 14, 21, 0.15);
+    }
+    .icone {
+        height: 60px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+
+    .imagem {
+        width: 350px;
+        border: 2px solid var(--claro);
+        border-radius: 20px;
+        transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+    }
+    .imagem:hover {
+        box-shadow: 0 10px 25px rgba(24, 14, 21, 0.15);
+    }
+    .print {
+        width: 300px;
+        height: 156px;
+    }
+
+    a {
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 35px auto 25px auto;
+        transition: background .3s ease, transform .3s ease;
+    }
+
+    footer {
+        padding: 15px;
+        border-top: 2px solid var(--apagado);
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .footer {
+        font-size: 13px;
+        padding: 7px;
+    }
+}

@@ -48,6 +48,11 @@ section {
 #ilustracao {
     display: none;
 }
+#secaoinicial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .inicial {
     flex: auto;
     padding: 10px;
