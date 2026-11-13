@@ -510,5 +510,45 @@
     "detalhes": "Encerrei o dia com tranquilidade.",
     "data": "2026-11-06",
     "horario": "20:30"
-  }
+  },
+  {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Família", "Relações", "Outro"],
+        "detalhes": null,
+        "data": "2026-11-08",
+        "horario": "16:46"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Cansado",
+        "influencias": ["Estudos", "Trabalho"],
+        "detalhes": "Dia cheio de atividades.",
+        "data": "2026-11-09",
+        "horario": "21:15"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Bem",
+        "influencias": ["Lazer", "Relações"],
+        "detalhes": "Consegui passar um tempo com amigos.",
+        "data": "2026-11-10",
+        "horario": "19:25"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Ansioso",
+        "influencias": ["Provas", "Estudos"],
+        "detalhes": "Preocupado com as avaliações.",
+        "data": "2026-11-11",
+        "horario": "17:40"
+    },
+    {
+        "usuarioId": 1,
+        "humor": "Calmo",
+        "influencias": ["Família", "Lazer"],
+        "detalhes": "Consegui relaxar em casa.",
+        "data": "2026-11-12",
+        "horario": "20:05"
+    }
 ]
